@@ -13,6 +13,8 @@
 		6959000C1731BDC400295E85 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 6959000B1731BDC400295E85 /* Default.png */; };
 		6959000E1731BDC400295E85 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6959000D1731BDC400295E85 /* Default@2x.png */; };
 		695900101731BDC400295E85 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6959000F1731BDC400295E85 /* Default-568h@2x.png */; };
+		695900181731BE5200295E85 /* ChallengeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 695900171731BE5200295E85 /* ChallengeViewController.m */; };
+		6959001A1731BF9700295E85 /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 695900191731BF9700295E85 /* MainStoryboard.storyboard */; };
 		6959FFFA1731BDC400295E85 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6959FFF91731BDC400295E85 /* UIKit.framework */; };
 		6959FFFC1731BDC400295E85 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6959FFFB1731BDC400295E85 /* Foundation.framework */; };
 		6959FFFE1731BDC400295E85 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6959FFFD1731BDC400295E85 /* CoreGraphics.framework */; };
@@ -28,6 +30,9 @@
 		6959000B1731BDC400295E85 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
 		6959000D1731BDC400295E85 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
 		6959000F1731BDC400295E85 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		695900161731BE5200295E85 /* ChallengeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChallengeViewController.h; sourceTree = "<group>"; };
+		695900171731BE5200295E85 /* ChallengeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChallengeViewController.m; sourceTree = "<group>"; };
+		695900191731BF9700295E85 /* MainStoryboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = MainStoryboard.storyboard; sourceTree = "<group>"; };
 		6959FFF61731BDC400295E85 /* Christian Challenge.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Christian Challenge.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		6959FFF91731BDC400295E85 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		6959FFFB1731BDC400295E85 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -92,6 +97,9 @@
 		6959FFFF1731BDC400295E85 /* Christian Challenge */ = {
 			isa = PBXGroup;
 			children = (
+				695900191731BF9700295E85 /* MainStoryboard.storyboard */,
+				695900161731BE5200295E85 /* ChallengeViewController.h */,
+				695900171731BE5200295E85 /* ChallengeViewController.m */,
 				695900081731BDC400295E85 /* AppDelegate.h */,
 				695900091731BDC400295E85 /* AppDelegate.m */,
 				695900001731BDC400295E85 /* Supporting Files */,
@@ -154,6 +162,7 @@
 				6959000C1731BDC400295E85 /* Default.png in Resources */,
 				6959000E1731BDC400295E85 /* Default@2x.png in Resources */,
 				695900101731BDC400295E85 /* Default-568h@2x.png in Resources */,
+				6959001A1731BF9700295E85 /* MainStoryboard.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -166,6 +175,7 @@
 			files = (
 				695900061731BDC400295E85 /* main.m in Sources */,
 				6959000A1731BDC400295E85 /* AppDelegate.m in Sources */,
+				695900181731BE5200295E85 /* ChallengeViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -271,6 +281,7 @@
 				695900151731BDC400295E85 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		6959FFF11731BDC400295E85 /* Build configuration list for PBXProject "Christian Challenge" */ = {
 			isa = XCConfigurationList;

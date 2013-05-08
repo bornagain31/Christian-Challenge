@@ -7,9 +7,12 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "ChallengeViewController.h"
 
 @interface AppDelegate : UIResponder <UIApplicationDelegate>
 
 @property (strong, nonatomic) UIWindow *window;
+//@property (strong, nonatomic) UIViewController *challenge;
+
 
 @end
