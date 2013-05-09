@@ -12,11 +12,21 @@
                         <rect key="frame" x="0.0" y="20" width="320" height="460"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
+                            <pickerView hidden="YES" tag="20" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Lze-sg-sqH">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="216" id="mrp-sw-wac"/>
+                                </constraints>
+                                <connections>
+                                    <outlet property="dataSource" destination="UC3-Q7-w4Z" id="af2-k7-PaB"/>
+                                    <outlet property="delegate" destination="UC3-Q7-w4Z" id="7tV-ls-8z8"/>
+                                </connections>
+                            </pickerView>
+                            <pickerView hidden="YES" tag="20" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mXQ-Ii-iEZ"/>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Christian Challenge" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ATV-B3-05L">
                                 <constraints>
                                     <constraint firstAttribute="height" constant="51" id="RkC-zq-x8K"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="19"/>
+                                <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="24"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -76,29 +86,19 @@
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <pickerView hidden="YES" tag="20" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Lze-sg-sqH">
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="216" id="mrp-sw-wac"/>
-                                </constraints>
-                                <connections>
-                                    <outlet property="dataSource" destination="UC3-Q7-w4Z" id="af2-k7-PaB"/>
-                                    <outlet property="delegate" destination="UC3-Q7-w4Z" id="7tV-ls-8z8"/>
-                                </connections>
-                            </pickerView>
-                            <pickerView hidden="YES" tag="20" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mXQ-Ii-iEZ"/>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="ZFN-mA-A65" firstAttribute="leading" secondItem="XHN-mm-Ew4" secondAttribute="leading" constant="20" symbolic="YES" type="default" id="5S1-7e-5T9"/>
-                            <constraint firstItem="ATV-B3-05L" firstAttribute="top" secondItem="XHN-mm-Ew4" secondAttribute="top" constant="22" id="5vK-8F-okB"/>
                             <constraint firstItem="mXQ-Ii-iEZ" firstAttribute="leading" secondItem="XHN-mm-Ew4" secondAttribute="leading" type="default" id="79B-ho-BPk"/>
-                            <constraint firstItem="ZFN-mA-A65" firstAttribute="top" secondItem="XHN-mm-Ew4" secondAttribute="top" constant="264" id="CDC-eD-tFB"/>
+                            <constraint firstItem="ATV-B3-05L" firstAttribute="top" secondItem="XHN-mm-Ew4" secondAttribute="top" constant="38" id="CdR-dP-tAf"/>
                             <constraint firstItem="kcn-uB-d2S" firstAttribute="centerY" secondItem="uag-iA-F1h" secondAttribute="centerY" type="default" id="DhF-5r-p77"/>
                             <constraint firstItem="ATV-B3-05L" firstAttribute="leading" secondItem="XHN-mm-Ew4" secondAttribute="leading" type="default" id="JxT-Fd-Nfd"/>
                             <constraint firstItem="ewP-LS-32b" firstAttribute="leading" secondItem="XHN-mm-Ew4" secondAttribute="leading" constant="20" symbolic="YES" type="default" id="N7S-Pw-5ho"/>
                             <constraint firstItem="mXQ-Ii-iEZ" firstAttribute="bottom" secondItem="XHN-mm-Ew4" secondAttribute="bottom" type="default" id="QRo-zp-3lE"/>
                             <constraint firstItem="Lze-sg-sqH" firstAttribute="leading" secondItem="XHN-mm-Ew4" secondAttribute="leading" type="default" id="RmJ-q6-YX1"/>
                             <constraint firstItem="ZFN-mA-A65" firstAttribute="trailing" secondItem="LqU-gw-Ode" secondAttribute="trailing" type="default" id="UNQ-0U-6QN"/>
+                            <constraint firstAttribute="bottom" secondItem="x9F-Er-SVo" secondAttribute="bottom" constant="163" id="UZ9-kO-H0a"/>
                             <constraint firstItem="Lze-sg-sqH" firstAttribute="trailing" secondItem="XHN-mm-Ew4" secondAttribute="trailing" type="default" id="Yht-Ux-h9g"/>
                             <constraint firstItem="LqU-gw-Ode" firstAttribute="leading" secondItem="XHN-mm-Ew4" secondAttribute="leading" constant="20" symbolic="YES" type="default" id="b4J-bv-LGV"/>
                             <constraint firstItem="ewP-LS-32b" firstAttribute="top" secondItem="XHN-mm-Ew4" secondAttribute="top" constant="126" id="bM6-RV-Tn1"/>
@@ -108,13 +108,13 @@
                             <constraint firstItem="LqU-gw-Ode" firstAttribute="top" secondItem="XHN-mm-Ew4" secondAttribute="top" constant="179" id="hso-Bm-IoB"/>
                             <constraint firstItem="kcn-uB-d2S" firstAttribute="leading" secondItem="XHN-mm-Ew4" secondAttribute="leading" constant="20" symbolic="YES" type="default" id="htL-QZ-W2e"/>
                             <constraint firstItem="Yb4-KT-cto" firstAttribute="top" secondItem="kcn-uB-d2S" secondAttribute="bottom" constant="8" symbolic="YES" type="default" id="lhs-Dj-OAj"/>
-                            <constraint firstItem="x9F-Er-SVo" firstAttribute="leading" secondItem="XHN-mm-Ew4" secondAttribute="leading" constant="20" symbolic="YES" type="default" id="lku-26-t4b"/>
                             <constraint firstItem="LqU-gw-Ode" firstAttribute="trailing" secondItem="ewP-LS-32b" secondAttribute="trailing" type="default" id="n3c-Hq-Voi"/>
-                            <constraint firstItem="x9F-Er-SVo" firstAttribute="top" secondItem="LqU-gw-Ode" secondAttribute="bottom" constant="8" symbolic="YES" type="default" id="pCL-TM-Nw8"/>
                             <constraint firstItem="Yb4-KT-cto" firstAttribute="leading" secondItem="XHN-mm-Ew4" secondAttribute="leading" constant="86" id="rJx-jZ-TzX"/>
                             <constraint firstItem="ATV-B3-05L" firstAttribute="trailing" secondItem="XHN-mm-Ew4" secondAttribute="trailing" type="default" id="tBx-Vw-RM9"/>
                             <constraint firstItem="mXQ-Ii-iEZ" firstAttribute="top" secondItem="Lze-sg-sqH" secondAttribute="top" type="default" id="te0-hB-1ng"/>
+                            <constraint firstItem="ZFN-mA-A65" firstAttribute="top" secondItem="XHN-mm-Ew4" secondAttribute="top" constant="223" id="uMf-Yv-bw0"/>
                             <constraint firstAttribute="bottom" secondItem="Yb4-KT-cto" secondAttribute="bottom" constant="72" id="vz5-EC-S6M"/>
+                            <constraint firstItem="x9F-Er-SVo" firstAttribute="leading" secondItem="XHN-mm-Ew4" secondAttribute="leading" constant="20" symbolic="YES" type="default" id="xyO-JC-LuP"/>
                         </constraints>
                     </view>
                     <connections>
@@ -137,7 +137,6 @@
             <relationships>
                 <relationship kind="action" name="challengePicker:"/>
                 <relationship kind="action" name="transPicker:"/>
-                <relationship kind="outlet" name="challengePicker" candidateClass="UIPickerView"/>
                 <relationship kind="outlet" name="email" candidateClass="UITextField"/>
                 <relationship kind="outlet" name="name" candidateClass="UITextField"/>
                 <relationship kind="outlet" name="pickChallenge" candidateClass="UITextField"/>
