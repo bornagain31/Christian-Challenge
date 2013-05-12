@@ -7,6 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <Parse/Parse.h>
 
 @interface ChallengeViewController : UIViewController <UIPickerViewDataSource, UIPickerViewDelegate>
 
@@ -22,5 +23,5 @@
 
 
 -(IBAction)transPicker:(id)sender;
-
+-(IBAction)getFit:(id)sender;
 @end

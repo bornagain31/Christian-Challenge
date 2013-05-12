@@ -117,7 +117,7 @@
      ********************/
     else{
         
-        //If challenges chosen is 30/30 Version
+        //If challenges chosen is 30/30 
         if([[challenges objectAtIndex:row] isEqualToString:@"30/30"]){
             
             //Set pickChallenge textfield to 30/30
@@ -130,7 +130,7 @@
             [pickChallenge resignFirstResponder];
         }
         
-        //If challenges chosen is 60/60 Version
+        //If challenges chosen is 60/60 
         else if([[challenges objectAtIndex:row] isEqualToString:@"60/60"]){
             
             //Set pickChallenge textfield to 60/60
@@ -143,10 +143,10 @@
             [pickChallenge resignFirstResponder];
         }
         
-        //If challenges chosen is 90/90 Version
-        else if([[challenges objectAtIndex:row] isEqualToString:@"60/60"]){
+        //If challenges chosen is 90/90 
+        else if([[challenges objectAtIndex:row] isEqualToString:@"90/90"]){
             
-            //Set pickChallenge textfield to ESV
+            //Set pickChallenge textfield to 90/90
             pickChallenge.text = @"90/90";
             
             //Hide picker
@@ -155,10 +155,10 @@
             //Resign pickChallenge textfield
             [pickChallenge resignFirstResponder];
         }
-        //If challenges chosen is Lifer Version
+        //If challenges chosen is Lifer 
         else {
             
-            //Set pickChallenge textfield to ESV
+            //Set pickChallenge textfield to Lifer
             pickChallenge.text = @"Lifer";
             
             //Hide picker
@@ -185,6 +185,10 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view.
+    
+    PFObject *testObject = [PFObject objectWithClassName:@"TestObject"];
+    [testObject setObject:@"bar" forKey:@"foo"];
+    [testObject save];
     
     challengePicker.delegate = self;
     transPicker.delegate = self;
@@ -216,7 +220,14 @@
     challengePicker.hidden = false;
 }
 
-
+-(IBAction)getFit:(id)sender{
+    
+    //Creates class record and saves users information in Parse.
+    PFObject *record = [PFObject objectWithClassName:@"Records"];
+    [record setObject:name.text forKey:@"Name"];
+    [record setObject:email.text forKey:@"Email"];
+    [record save];
+}
 
 
 @end

@@ -12,24 +12,18 @@
                         <rect key="frame" x="0.0" y="20" width="320" height="460"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="CCBackground.png" translatesAutoresizingMaskIntoConstraints="NO" id="V3J-uX-9r8"/>
                             <pickerView hidden="YES" tag="20" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Lze-sg-sqH">
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="216" id="mrp-sw-wac"/>
-                                </constraints>
                                 <connections>
                                     <outlet property="dataSource" destination="UC3-Q7-w4Z" id="af2-k7-PaB"/>
                                     <outlet property="delegate" destination="UC3-Q7-w4Z" id="7tV-ls-8z8"/>
                                 </connections>
                             </pickerView>
-                            <pickerView hidden="YES" tag="20" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mXQ-Ii-iEZ"/>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Christian Challenge" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ATV-B3-05L">
+                            <pickerView hidden="YES" tag="20" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mXQ-Ii-iEZ">
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="51" id="RkC-zq-x8K"/>
+                                    <constraint firstAttribute="height" constant="216" id="zo0-TR-PFT"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="24"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                            </pickerView>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Name" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ewP-LS-32b">
                                 <constraints>
                                     <constraint firstAttribute="width" constant="180" id="fSU-er-UxV"/>
@@ -75,6 +69,9 @@
                                 <state key="highlighted">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="getFit:" destination="UC3-Q7-w4Z" eventType="touchUpInside" id="VfL-xd-aWa"/>
+                                </connections>
                             </button>
                             <switch opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="kcn-uB-d2S"/>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Make my challenge public" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uag-iA-F1h">
@@ -89,16 +86,18 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="V3J-uX-9r8" firstAttribute="top" secondItem="XHN-mm-Ew4" secondAttribute="top" type="default" id="0tJ-JB-kOt"/>
                             <constraint firstItem="ZFN-mA-A65" firstAttribute="leading" secondItem="XHN-mm-Ew4" secondAttribute="leading" constant="20" symbolic="YES" type="default" id="5S1-7e-5T9"/>
                             <constraint firstItem="mXQ-Ii-iEZ" firstAttribute="leading" secondItem="XHN-mm-Ew4" secondAttribute="leading" type="default" id="79B-ho-BPk"/>
-                            <constraint firstItem="ATV-B3-05L" firstAttribute="top" secondItem="XHN-mm-Ew4" secondAttribute="top" constant="38" id="CdR-dP-tAf"/>
+                            <constraint firstItem="V3J-uX-9r8" firstAttribute="trailing" secondItem="XHN-mm-Ew4" secondAttribute="trailing" type="default" id="CIm-eR-fea"/>
                             <constraint firstItem="kcn-uB-d2S" firstAttribute="centerY" secondItem="uag-iA-F1h" secondAttribute="centerY" type="default" id="DhF-5r-p77"/>
-                            <constraint firstItem="ATV-B3-05L" firstAttribute="leading" secondItem="XHN-mm-Ew4" secondAttribute="leading" type="default" id="JxT-Fd-Nfd"/>
+                            <constraint firstItem="V3J-uX-9r8" firstAttribute="bottom" secondItem="XHN-mm-Ew4" secondAttribute="bottom" type="default" id="DoN-V0-IiO"/>
+                            <constraint firstItem="x9F-Er-SVo" firstAttribute="top" secondItem="XHN-mm-Ew4" secondAttribute="top" constant="271" id="Koj-XV-SuD"/>
                             <constraint firstItem="ewP-LS-32b" firstAttribute="leading" secondItem="XHN-mm-Ew4" secondAttribute="leading" constant="20" symbolic="YES" type="default" id="N7S-Pw-5ho"/>
                             <constraint firstItem="mXQ-Ii-iEZ" firstAttribute="bottom" secondItem="XHN-mm-Ew4" secondAttribute="bottom" type="default" id="QRo-zp-3lE"/>
                             <constraint firstItem="Lze-sg-sqH" firstAttribute="leading" secondItem="XHN-mm-Ew4" secondAttribute="leading" type="default" id="RmJ-q6-YX1"/>
                             <constraint firstItem="ZFN-mA-A65" firstAttribute="trailing" secondItem="LqU-gw-Ode" secondAttribute="trailing" type="default" id="UNQ-0U-6QN"/>
-                            <constraint firstAttribute="bottom" secondItem="x9F-Er-SVo" secondAttribute="bottom" constant="163" id="UZ9-kO-H0a"/>
+                            <constraint firstItem="V3J-uX-9r8" firstAttribute="leading" secondItem="XHN-mm-Ew4" secondAttribute="leading" type="default" id="XEd-nC-ok8"/>
                             <constraint firstItem="Lze-sg-sqH" firstAttribute="trailing" secondItem="XHN-mm-Ew4" secondAttribute="trailing" type="default" id="Yht-Ux-h9g"/>
                             <constraint firstItem="LqU-gw-Ode" firstAttribute="leading" secondItem="XHN-mm-Ew4" secondAttribute="leading" constant="20" symbolic="YES" type="default" id="b4J-bv-LGV"/>
                             <constraint firstItem="ewP-LS-32b" firstAttribute="top" secondItem="XHN-mm-Ew4" secondAttribute="top" constant="126" id="bM6-RV-Tn1"/>
@@ -110,7 +109,6 @@
                             <constraint firstItem="Yb4-KT-cto" firstAttribute="top" secondItem="kcn-uB-d2S" secondAttribute="bottom" constant="8" symbolic="YES" type="default" id="lhs-Dj-OAj"/>
                             <constraint firstItem="LqU-gw-Ode" firstAttribute="trailing" secondItem="ewP-LS-32b" secondAttribute="trailing" type="default" id="n3c-Hq-Voi"/>
                             <constraint firstItem="Yb4-KT-cto" firstAttribute="leading" secondItem="XHN-mm-Ew4" secondAttribute="leading" constant="86" id="rJx-jZ-TzX"/>
-                            <constraint firstItem="ATV-B3-05L" firstAttribute="trailing" secondItem="XHN-mm-Ew4" secondAttribute="trailing" type="default" id="tBx-Vw-RM9"/>
                             <constraint firstItem="mXQ-Ii-iEZ" firstAttribute="top" secondItem="Lze-sg-sqH" secondAttribute="top" type="default" id="te0-hB-1ng"/>
                             <constraint firstItem="ZFN-mA-A65" firstAttribute="top" secondItem="XHN-mm-Ew4" secondAttribute="top" constant="223" id="uMf-Yv-bw0"/>
                             <constraint firstAttribute="bottom" secondItem="Yb4-KT-cto" secondAttribute="bottom" constant="72" id="vz5-EC-S6M"/>
@@ -131,23 +129,9 @@
             <point key="canvasLocation" x="76" y="11"/>
         </scene>
     </scenes>
-    <classes>
-        <class className="ChallengeViewController" superclassName="UIViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/ChallengeViewController.h"/>
-            <relationships>
-                <relationship kind="action" name="challengePicker:"/>
-                <relationship kind="action" name="transPicker:"/>
-                <relationship kind="outlet" name="email" candidateClass="UITextField"/>
-                <relationship kind="outlet" name="name" candidateClass="UITextField"/>
-                <relationship kind="outlet" name="pickChallenge" candidateClass="UITextField"/>
-                <relationship kind="outlet" name="transPicker" candidateClass="UIPickerView"/>
-                <relationship kind="outlet" name="translation" candidateClass="UITextField"/>
-            </relationships>
-        </class>
-        <class className="NSLayoutConstraint" superclassName="NSObject">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/NSLayoutConstraint.h"/>
-        </class>
-    </classes>
+    <resources>
+        <image name="CCBackground.png" width="680" height="960"/>
+    </resources>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
         <simulatedOrientationMetrics key="orientation"/>
