@@ -186,10 +186,7 @@
     [super viewDidLoad];
 	// Do any additional setup after loading the view.
     
-    PFObject *testObject = [PFObject objectWithClassName:@"TestObject"];
-    [testObject setObject:@"bar" forKey:@"foo"];
-    [testObject save];
-    
+    //Set Delegates and Data Sources to self for Pickers
     challengePicker.delegate = self;
     transPicker.delegate = self;
     
@@ -226,6 +223,8 @@
     PFObject *record = [PFObject objectWithClassName:@"Records"];
     [record setObject:name.text forKey:@"Name"];
     [record setObject:email.text forKey:@"Email"];
+    [record setObject:pickChallenge.text forKey:@"Challenge"];
+    [record setObject:translation.text forKey:@"Translation"];
     [record save];
 }
 
