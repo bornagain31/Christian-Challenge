@@ -8,6 +8,8 @@
 
 #import <UIKit/UIKit.h>
 #import "ChallengeViewController.h"
+#import "LoginViewController.h"
+
 
 @interface AppDelegate : UIResponder <UIApplicationDelegate>
 

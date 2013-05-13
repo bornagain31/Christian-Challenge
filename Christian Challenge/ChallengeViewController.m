@@ -7,6 +7,7 @@
 //
 
 #import "ChallengeViewController.h"
+#import "LoginViewController.h"
 #define CCCHALLENGE 20
 #define CCTRANSLATION 21
 @interface ChallengeViewController ()
@@ -186,6 +187,9 @@
     [super viewDidLoad];
 	// Do any additional setup after loading the view.
     
+    //Makes sure when program loads there is no one signed in
+    [PFUser logOut];
+    
     //Set Delegates and Data Sources to self for Pickers
     challengePicker.delegate = self;
     transPicker.delegate = self;
@@ -205,6 +209,55 @@
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
+-(void)viewDidAppear:(BOOL)animated{
+    
+    [super viewDidAppear:animated];
+    
+    // Instantiate our custom log in view controller
+    //LoginViewController *login = [[LoginViewController alloc]init];
+    
+    if (![PFUser currentUser]) { // No user logged in
+        // Create the log in view controller
+        LoginViewController *login = [[LoginViewController alloc] init];
+        [login setDelegate:self]; // Set ourselves as the delegate
+        
+        // Create the sign up view controller
+        PFSignUpViewController *signUpViewController = [[PFSignUpViewController alloc] init];
+        [signUpViewController setDelegate:self]; // Set ourselves as the delegate
+        
+        // Assign our sign up controller to be displayed from the login controller
+        [login setSignUpController:signUpViewController];
+        
+        // Present the log in view controller
+        [self presentViewController:login animated:YES completion:NULL];
+    }
+}
+
+// Sent to the delegate to determine whether the log in request should be submitted to the server.
+- (BOOL)logInViewController:(PFLogInViewController *)logInController shouldBeginLogInWithUsername:(NSString *)username password:(NSString *)password {
+    // Check if both fields are completed
+    if (username && password && username.length != 0 && password.length != 0) {
+        return YES; // Begin login process
+    }
+    
+    [[[UIAlertView alloc] initWithTitle:@"Missing Information"
+                                message:@"Make sure you fill out all of the information!"
+                               delegate:nil
+                      cancelButtonTitle:@"ok"
+                      otherButtonTitles:nil] show];
+    return NO; // Interrupt login process
+}
+
+// Sent to the delegate when the log in attempt fails.
+- (void)logInViewController:(PFLogInViewController *)logInController didFailToLogInWithError:(NSError *)error {
+    NSLog(@"Failed to log in...");
+}
+
+// Sent to the delegate when the log in screen is dismissed.
+- (void)logInViewControllerDidCancelLogIn:(PFLogInViewController *)logInController {
+    [self.navigationController popViewControllerAnimated:YES];
+}
+
 -(IBAction)transPicker:(id)sender{
     
     translation.inputView = transPicker;
@@ -225,8 +278,28 @@
     [record setObject:email.text forKey:@"Email"];
     [record setObject:pickChallenge.text forKey:@"Challenge"];
     [record setObject:translation.text forKey:@"Translation"];
+    
+  
+    //Save Record
     [record save];
 }
 
+/********************
+ *     DELEGATES    *
+ ********************/
+
+
+-(void)logInViewController:(PFLogInViewController *)logInController didLogInUser:(PFUser *)user
+{
+    [self dismissModalViewControllerAnimated:YES];
+}
+-(void)signUpViewController:(PFSignUpViewController *)signUpController didSignUpUser:(PFUser *)user
+{
+    [self dismissModalViewControllerAnimated:YES];
+}
+-(void)signUpViewControllerDidCancelSignUp:(PFSignUpViewController *)signUpController
+{
+    [self dismissModalViewControllerAnimated:YES];
+}
 
 @end

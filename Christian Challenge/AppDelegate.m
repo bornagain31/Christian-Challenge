@@ -9,6 +9,7 @@
 #import "AppDelegate.h"
 #import <Parse/Parse.h>
 
+
 @implementation AppDelegate
 
 //@synthesize challenge;
@@ -22,6 +23,7 @@
     [PFAnalytics trackAppOpenedWithLaunchOptions:launchOptions];
     
     return YES;
+    
     
 }
 

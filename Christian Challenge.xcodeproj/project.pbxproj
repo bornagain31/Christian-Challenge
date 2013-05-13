@@ -29,6 +29,10 @@
 		69C5D466173BC3E10000E5EE /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 69C5D465173BC3E10000E5EE /* Security.framework */; };
 		69C5D468173BC3E70000E5EE /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 69C5D467173BC3E70000E5EE /* StoreKit.framework */; };
 		69C5D46A173BC3EE0000E5EE /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 69C5D469173BC3EE0000E5EE /* SystemConfiguration.framework */; };
+		69CB878E1741459000C1DE01 /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 69CB878D1741459000C1DE01 /* LoginViewController.m */; };
+		69CB879017414FAF00C1DE01 /* CCLogo1.png in Resources */ = {isa = PBXBuildFile; fileRef = 69CB878F17414FAF00C1DE01 /* CCLogo1.png */; };
+		69CB8794174162EC00C1DE01 /* CCLogo1-1.png in Resources */ = {isa = PBXBuildFile; fileRef = 69CB8793174162EC00C1DE01 /* CCLogo1-1.png */; };
+		69CB87961741632D00C1DE01 /* CCLogo1-2.png in Resources */ = {isa = PBXBuildFile; fileRef = 69CB87951741632D00C1DE01 /* CCLogo1-2.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -59,6 +63,11 @@
 		69C5D465173BC3E10000E5EE /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
 		69C5D467173BC3E70000E5EE /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
 		69C5D469173BC3EE0000E5EE /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		69CB878C1741459000C1DE01 /* LoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginViewController.h; sourceTree = "<group>"; };
+		69CB878D1741459000C1DE01 /* LoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginViewController.m; sourceTree = "<group>"; };
+		69CB878F17414FAF00C1DE01 /* CCLogo1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = CCLogo1.png; sourceTree = "<group>"; };
+		69CB8793174162EC00C1DE01 /* CCLogo1-1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "CCLogo1-1.png"; sourceTree = "<group>"; };
+		69CB87951741632D00C1DE01 /* CCLogo1-2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "CCLogo1-2.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -88,6 +97,9 @@
 		695900001731BDC400295E85 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				69CB87951741632D00C1DE01 /* CCLogo1-2.png */,
+				69CB8793174162EC00C1DE01 /* CCLogo1-1.png */,
+				69CB878F17414FAF00C1DE01 /* CCLogo1.png */,
 				69A29F4F173DFC2700D4A3E9 /* CCBackground.png */,
 				695900011731BDC400295E85 /* Christian Challenge-Info.plist */,
 				695900021731BDC400295E85 /* InfoPlist.strings */,
@@ -96,6 +108,8 @@
 				6959000B1731BDC400295E85 /* Default.png */,
 				6959000D1731BDC400295E85 /* Default@2x.png */,
 				6959000F1731BDC400295E85 /* Default-568h@2x.png */,
+				69CB878C1741459000C1DE01 /* LoginViewController.h */,
+				69CB878D1741459000C1DE01 /* LoginViewController.m */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -207,6 +221,9 @@
 				695900101731BDC400295E85 /* Default-568h@2x.png in Resources */,
 				6959001A1731BF9700295E85 /* MainStoryboard.storyboard in Resources */,
 				69A29F50173DFC2700D4A3E9 /* CCBackground.png in Resources */,
+				69CB879017414FAF00C1DE01 /* CCLogo1.png in Resources */,
+				69CB8794174162EC00C1DE01 /* CCLogo1-1.png in Resources */,
+				69CB87961741632D00C1DE01 /* CCLogo1-2.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -220,6 +237,7 @@
 				695900061731BDC400295E85 /* main.m in Sources */,
 				6959000A1731BDC400295E85 /* AppDelegate.m in Sources */,
 				695900181731BE5200295E85 /* ChallengeViewController.m in Sources */,
+				69CB878E1741459000C1DE01 /* LoginViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
