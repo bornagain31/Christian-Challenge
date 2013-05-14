@@ -197,9 +197,11 @@
     challengePicker.dataSource = self;
     transPicker.dataSource = self;
     
+    //Set Picker tags from defines
     challengePicker.tag = CCCHALLENGE;
     transPicker.tag = CCTRANSLATION;
     
+    //Build arrays to hold translations and challenges
     self.translations = [[NSArray alloc]initWithObjects:@"", @"KJV", @"NIV", @"ESV", nil];
     self.challenges = [[NSArray alloc]initWithObjects:@"", @"30/30",@"60/60", @"90/90",@"Lifer", nil];
 }
