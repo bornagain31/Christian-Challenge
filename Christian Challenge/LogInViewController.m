@@ -28,8 +28,8 @@
     [super viewDidLoad];
 	// Do any additional setup after loading the view.
     //self.view.backgroundColor = [UIColor colorWithPatternImage:[UIImage imageNamed:@"CCBackground.png"]];
-    self.logInView.usernameField.backgroundColor = [UIColor colorWithWhite:1.0 alpha:0.2];
-    self.logInView.passwordField.backgroundColor = [UIColor colorWithWhite:1.0 alpha:0.2];
+    //self.logInView.usernameField.backgroundColor = [UIColor colorWithWhite:1.0 alpha:0.2];
+    //self.logInView.passwordField.backgroundColor = [UIColor colorWithWhite:1.0 alpha:0.2];
     
     //Add logo to top of Login Screen
     self.logInView.logo = [[UIImageView alloc]initWithImage:[UIImage imageNamed:@"CCLogo1-2.png"]];

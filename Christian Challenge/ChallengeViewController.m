@@ -29,6 +29,35 @@
 
 
 
+//- (IBAction)checkbox:(id)sender
+//{
+//    BOOL boxChecked = NO;
+//    isChecked = [UIImage imageNamed:@"checkbox-on.png"];
+//    notChecked = [UIImage imageNamed:@"checkbox-off.png"];
+//    
+//    b = checkboxout;
+//    if (!boxChecked)
+//    {
+//        boxChecked = YES;
+//    
+//        [b setImage:isChecked forState:UIControlStateNormal];
+//        checkboxout = [NSNumber numberWithBool:boxChecked];
+//        return;
+//    }
+//    if (boxChecked)
+//    {
+//        boxChecked = NO;
+//        [b setImage:notChecked forState:UIControlStateNormal];
+//        checkboxState = [NSNumber numberWithBool:boxChecked];
+//        return;
+//    }
+//}
+
+
+
+
+
+
 - (void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)eve
 {
 }
