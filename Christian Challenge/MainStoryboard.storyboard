@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="2.0" toolsVersion="3084" systemVersion="12D78" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="UC3-Q7-w4Z">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="2.0" toolsVersion="3084" systemVersion="12D78" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="o5e-ek-zbH">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="2083"/>
     </dependencies>
     <scenes>
-        <!--Challenge View Controller-->
+        <!--View Controller-->
         <scene sceneID="QEj-Ui-xPG">
             <objects>
-                <viewController id="UC3-Q7-w4Z" customClass="ChallengeViewController" sceneMemberID="viewController">
+                <viewController id="UC3-Q7-w4Z" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="XHN-mm-Ew4">
                         <rect key="frame" x="0.0" y="20" width="320" height="460"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -127,12 +127,107 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="JGw-ci-rvL" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="76" y="11"/>
+            <point key="canvasLocation" x="-222" y="657"/>
         </scene>
-        <!--View Controller-->
+        <!--Profile View Controller-->
+        <scene sceneID="SBC-hZ-Z4X">
+            <objects>
+                <viewController id="8i6-NG-Ilh" customClass="ProfileViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Xaa-Vh-YZt">
+                        <rect key="frame" x="0.0" y="20" width="320" height="460"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" barStyle="blackTranslucent" translatesAutoresizingMaskIntoConstraints="NO" id="h0n-0a-SFR">
+                                <items>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="USE-3K-A9P"/>
+                                    <barButtonItem title="Profile" style="plain" id="nZw-rM-NMU"/>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="GgG-d8-KiH"/>
+                                    <barButtonItem systemItem="edit" id="4Ov-Id-CTk"/>
+                                </items>
+                                <color key="tintColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                            </toolbar>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Name:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uv8-7L-msd">
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Email:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PLA-xX-iem">
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Challenge:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kF7-nc-A6X">
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="name" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RAL-Ej-qsQ">
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="email" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8vd-pR-PRc">
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="30/30" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ier-2v-ioC">
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Day:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LYc-Lt-erG">
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="38" id="go3-bk-azv"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="1" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fUT-lj-9YC">
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="uv8-7L-msd" firstAttribute="leading" secondItem="Xaa-Vh-YZt" secondAttribute="leading" constant="20" symbolic="YES" type="default" id="1zm-2q-cDK"/>
+                            <constraint firstItem="h0n-0a-SFR" firstAttribute="leading" secondItem="Xaa-Vh-YZt" secondAttribute="leading" type="default" id="4A1-rO-d8z"/>
+                            <constraint firstAttribute="bottom" secondItem="LYc-Lt-erG" secondAttribute="bottom" constant="187" id="9BH-rl-2TF"/>
+                            <constraint firstItem="uv8-7L-msd" firstAttribute="top" secondItem="Xaa-Vh-YZt" secondAttribute="top" constant="130" id="Bqe-O9-CKk"/>
+                            <constraint firstItem="ier-2v-ioC" firstAttribute="baseline" secondItem="kF7-nc-A6X" secondAttribute="baseline" type="default" id="Cmu-wz-v8P"/>
+                            <constraint firstItem="h0n-0a-SFR" firstAttribute="trailing" secondItem="Xaa-Vh-YZt" secondAttribute="trailing" type="default" id="D9N-GY-ahf"/>
+                            <constraint firstItem="PLA-xX-iem" firstAttribute="leading" secondItem="Xaa-Vh-YZt" secondAttribute="leading" constant="20" symbolic="YES" type="default" id="KdA-bw-0Lt"/>
+                            <constraint firstItem="8vd-pR-PRc" firstAttribute="centerX" secondItem="fUT-lj-9YC" secondAttribute="centerX" type="default" id="Leg-VB-heK"/>
+                            <constraint firstItem="LYc-Lt-erG" firstAttribute="leading" secondItem="Xaa-Vh-YZt" secondAttribute="leading" constant="20" symbolic="YES" type="default" id="QHL-07-4Fz"/>
+                            <constraint firstItem="RAL-Ej-qsQ" firstAttribute="baseline" secondItem="uv8-7L-msd" secondAttribute="baseline" type="default" id="R8p-3a-9qw"/>
+                            <constraint firstItem="ier-2v-ioC" firstAttribute="leading" secondItem="8vd-pR-PRc" secondAttribute="leading" type="default" id="UKK-SN-tLA"/>
+                            <constraint firstItem="fUT-lj-9YC" firstAttribute="trailing" secondItem="8vd-pR-PRc" secondAttribute="trailing" type="default" id="W0W-6L-oDi"/>
+                            <constraint firstItem="kF7-nc-A6X" firstAttribute="top" secondItem="Xaa-Vh-YZt" secondAttribute="top" constant="209" id="ZwU-Y5-RNq"/>
+                            <constraint firstItem="fUT-lj-9YC" firstAttribute="baseline" secondItem="LYc-Lt-erG" secondAttribute="baseline" type="default" id="aDk-sP-pkz"/>
+                            <constraint firstItem="fUT-lj-9YC" firstAttribute="leading" secondItem="Xaa-Vh-YZt" secondAttribute="leading" constant="127" id="cgF-Zt-hhI"/>
+                            <constraint firstItem="8vd-pR-PRc" firstAttribute="leading" secondItem="RAL-Ej-qsQ" secondAttribute="leading" type="default" id="eG2-Uy-v2W"/>
+                            <constraint firstItem="kF7-nc-A6X" firstAttribute="leading" secondItem="Xaa-Vh-YZt" secondAttribute="leading" constant="20" symbolic="YES" type="default" id="gZz-Vg-v6t"/>
+                            <constraint firstItem="8vd-pR-PRc" firstAttribute="baseline" secondItem="PLA-xX-iem" secondAttribute="baseline" type="default" id="nnJ-3G-0Z2"/>
+                            <constraint firstItem="h0n-0a-SFR" firstAttribute="top" secondItem="Xaa-Vh-YZt" secondAttribute="top" type="default" id="qmJ-9n-Qxk"/>
+                            <constraint firstItem="PLA-xX-iem" firstAttribute="top" secondItem="Xaa-Vh-YZt" secondAttribute="top" constant="169" id="vg9-mQ-GGT"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="challenge" destination="ier-2v-ioC" id="WQM-EP-hyx"/>
+                        <outlet property="email" destination="8vd-pR-PRc" id="0pB-au-Ri5"/>
+                        <outlet property="username" destination="RAL-Ej-qsQ" id="mwd-lC-rbF"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ebe-Xh-o7O" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-18" y="10"/>
+        </scene>
+        <!--Challenge View Controller-->
         <scene sceneID="l5t-2u-jPy">
             <objects>
-                <viewController id="o5e-ek-zbH" sceneMemberID="viewController">
+                <viewController id="o5e-ek-zbH" customClass="ChallengeViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="od5-tl-Kwz">
                         <rect key="frame" x="0.0" y="20" width="320" height="460"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -211,6 +306,7 @@
                                 <connections>
                                     <action selector="checkbox:" destination="tVF-55-okf" eventType="touchUpInside" id="REO-7t-L4H"/>
                                     <outlet property="checkboxout" destination="tVF-55-okf" id="mvr-gf-fac"/>
+                                    <segue destination="8i6-NG-Ilh" kind="modal" id="SMQ-zd-soO"/>
                                 </connections>
                             </button>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="comments" translatesAutoresizingMaskIntoConstraints="NO" id="Yn8-5a-1MI">
@@ -273,19 +369,17 @@
     <classes>
         <class className="ChallengeViewController" superclassName="UIViewController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/ChallengeViewController.h"/>
-            <relationships>
-                <relationship kind="action" name="challengePicker:"/>
-                <relationship kind="action" name="getFit:"/>
-                <relationship kind="action" name="transPicker:"/>
-                <relationship kind="outlet" name="email" candidateClass="UITextField"/>
-                <relationship kind="outlet" name="name" candidateClass="UITextField"/>
-                <relationship kind="outlet" name="pickChallenge" candidateClass="UITextField"/>
-                <relationship kind="outlet" name="transPicker" candidateClass="UIPickerView"/>
-                <relationship kind="outlet" name="translation" candidateClass="UITextField"/>
-            </relationships>
         </class>
         <class className="NSLayoutConstraint" superclassName="NSObject">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/NSLayoutConstraint.h"/>
+        </class>
+        <class className="ProfileViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/ProfileViewController.h"/>
+            <relationships>
+                <relationship kind="outlet" name="challenge" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="email" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="username" candidateClass="UILabel"/>
+            </relationships>
         </class>
         <class className="checkBoxes" superclassName="UIButton">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/checkBoxes.h"/>

@@ -9,21 +9,24 @@
 #import <UIKit/UIKit.h>
 #import <Parse/Parse.h>
 
-@interface ChallengeViewController : UIViewController <PFLogInViewControllerDelegate, PFSignUpViewControllerDelegate, UIPickerViewDataSource, UIPickerViewDelegate>
 
-@property (strong, nonatomic) IBOutlet UITextField *name;
-@property (strong, nonatomic) IBOutlet UITextField *email;
-@property (strong, nonatomic) IBOutlet UITextField *pickChallenge;
-@property (strong, nonatomic) IBOutlet UITextField *translation;
-@property (strong, nonatomic) UIStoryboard *storyboard;
-@property (strong, nonatomic) IBOutlet IBOutlet UIPickerView *challengePicker;
-@property (strong, nonatomic) IBOutlet UIPickerView *transPicker;
-@property (strong, nonatomic) NSArray *translations;
-@property (strong, nonatomic) NSArray *challenges;
+@class UserObject;
 
+@interface ChallengeViewController : UIViewController <PFLogInViewControllerDelegate, PFSignUpViewControllerDelegate>//, UIPickerViewDataSource, UIPickerViewDelegate>
 
--(IBAction)transPicker:(id)sender;
--(IBAction)getFit:(id)sender;
+//@property (strong, nonatomic) IBOutlet UITextField *name;
+//@property (strong, nonatomic) IBOutlet UITextField *email;
+//@property (strong, nonatomic) IBOutlet UITextField *pickChallenge;
+//@property (strong, nonatomic) IBOutlet UITextField *translation;
+//@property (strong, nonatomic) UIStoryboard *storyboard;
+//@property (strong, nonatomic) IBOutlet IBOutlet UIPickerView *challengePicker;
+//@property (strong, nonatomic) IBOutlet UIPickerView *transPicker;
+//@property (strong, nonatomic) NSArray *translations;
+//@property (strong, nonatomic) NSArray *challenges;
+//
+//
+//-(IBAction)transPicker:(id)sender;
+//-(IBAction)getFit:(id)sender;
 
 
 @end

@@ -7,12 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		694BA50C175152A9004D4CC4 /* ProfileViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 694BA50B175152A9004D4CC4 /* ProfileViewController.m */; };
 		695900041731BDC400295E85 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 695900021731BDC400295E85 /* InfoPlist.strings */; };
 		695900061731BDC400295E85 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 695900051731BDC400295E85 /* main.m */; };
 		6959000A1731BDC400295E85 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 695900091731BDC400295E85 /* AppDelegate.m */; };
-		6959000C1731BDC400295E85 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 6959000B1731BDC400295E85 /* Default.png */; };
-		6959000E1731BDC400295E85 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6959000D1731BDC400295E85 /* Default@2x.png */; };
-		695900101731BDC400295E85 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6959000F1731BDC400295E85 /* Default-568h@2x.png */; };
 		695900181731BE5200295E85 /* ChallengeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 695900171731BE5200295E85 /* ChallengeViewController.m */; };
 		6959001A1731BF9700295E85 /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 695900191731BF9700295E85 /* MainStoryboard.storyboard */; };
 		6959FFFA1731BDC400295E85 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6959FFF91731BDC400295E85 /* UIKit.framework */; };
@@ -30,26 +28,29 @@
 		69C5D466173BC3E10000E5EE /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 69C5D465173BC3E10000E5EE /* Security.framework */; };
 		69C5D468173BC3E70000E5EE /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 69C5D467173BC3E70000E5EE /* StoreKit.framework */; };
 		69C5D46A173BC3EE0000E5EE /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 69C5D469173BC3EE0000E5EE /* SystemConfiguration.framework */; };
+		69C6D30E1750591000E748C8 /* Icon.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 69C6D30D1750591000E748C8 /* Icon.jpg */; };
+		69C6D31117505DCE00E748C8 /* SignUpViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 69C6D31017505DCD00E748C8 /* SignUpViewController.m */; };
+		69C6D31E175064FD00E748C8 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 69C6D31D175064FD00E748C8 /* Default.png */; };
+		69C6D3201750650200E748C8 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 69C6D31F1750650200E748C8 /* Default@2x.png */; };
+		69C6D3221750650C00E748C8 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 69C6D3211750650B00E748C8 /* Default-568h@2x.png */; };
 		69CB878E1741459000C1DE01 /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 69CB878D1741459000C1DE01 /* LoginViewController.m */; };
 		69CB879017414FAF00C1DE01 /* CCLogo1.png in Resources */ = {isa = PBXBuildFile; fileRef = 69CB878F17414FAF00C1DE01 /* CCLogo1.png */; };
 		69CB8794174162EC00C1DE01 /* CCLogo1-1.png in Resources */ = {isa = PBXBuildFile; fileRef = 69CB8793174162EC00C1DE01 /* CCLogo1-1.png */; };
 		69CB87961741632D00C1DE01 /* CCLogo1-2.png in Resources */ = {isa = PBXBuildFile; fileRef = 69CB87951741632D00C1DE01 /* CCLogo1-2.png */; };
-		9C09108B1747159C00124867 /* CCBackground.png in Resources */ = {isa = PBXBuildFile; fileRef = 9C09108A1747159C00124867 /* CCBackground.png */; };
 		9C09108E17471DEA00124867 /* checkbox-off.png in Resources */ = {isa = PBXBuildFile; fileRef = 9C09108C17471DEA00124867 /* checkbox-off.png */; };
 		9C09108F17471DEA00124867 /* checkbox-on.png in Resources */ = {isa = PBXBuildFile; fileRef = 9C09108D17471DEA00124867 /* checkbox-on.png */; };
 		9C0910921747242500124867 /* checkBoxes.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C0910911747242500124867 /* checkBoxes.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		694BA50A175152A9004D4CC4 /* ProfileViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProfileViewController.h; sourceTree = "<group>"; };
+		694BA50B175152A9004D4CC4 /* ProfileViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProfileViewController.m; sourceTree = "<group>"; };
 		695900011731BDC400295E85 /* Christian Challenge-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Christian Challenge-Info.plist"; sourceTree = "<group>"; };
 		695900031731BDC400295E85 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		695900051731BDC400295E85 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		695900071731BDC400295E85 /* Christian Challenge-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Christian Challenge-Prefix.pch"; sourceTree = "<group>"; };
 		695900081731BDC400295E85 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		695900091731BDC400295E85 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		6959000B1731BDC400295E85 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
-		6959000D1731BDC400295E85 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
-		6959000F1731BDC400295E85 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 		695900161731BE5200295E85 /* ChallengeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChallengeViewController.h; sourceTree = "<group>"; };
 		695900171731BE5200295E85 /* ChallengeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChallengeViewController.m; sourceTree = "<group>"; };
 		695900191731BF9700295E85 /* MainStoryboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = MainStoryboard.storyboard; sourceTree = "<group>"; };
@@ -69,12 +70,17 @@
 		69C5D465173BC3E10000E5EE /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
 		69C5D467173BC3E70000E5EE /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
 		69C5D469173BC3EE0000E5EE /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		69C6D30D1750591000E748C8 /* Icon.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = Icon.jpg; path = ../../Desktop/Icon.jpg; sourceTree = "<group>"; };
+		69C6D30F17505DCD00E748C8 /* SignUpViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SignUpViewController.h; sourceTree = "<group>"; };
+		69C6D31017505DCD00E748C8 /* SignUpViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SignUpViewController.m; sourceTree = "<group>"; };
+		69C6D31D175064FD00E748C8 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+		69C6D31F1750650200E748C8 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
+		69C6D3211750650B00E748C8 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 		69CB878C1741459000C1DE01 /* LoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginViewController.h; sourceTree = "<group>"; };
 		69CB878D1741459000C1DE01 /* LoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginViewController.m; sourceTree = "<group>"; };
 		69CB878F17414FAF00C1DE01 /* CCLogo1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = CCLogo1.png; sourceTree = "<group>"; };
 		69CB8793174162EC00C1DE01 /* CCLogo1-1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "CCLogo1-1.png"; sourceTree = "<group>"; };
 		69CB87951741632D00C1DE01 /* CCLogo1-2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "CCLogo1-2.png"; sourceTree = "<group>"; };
-		9C09108A1747159C00124867 /* CCBackground.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = CCBackground.png; path = ../../artwork/CCBackground.png; sourceTree = "<group>"; };
 		9C09108C17471DEA00124867 /* checkbox-off.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "checkbox-off.png"; sourceTree = "<group>"; };
 		9C09108D17471DEA00124867 /* checkbox-on.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "checkbox-on.png"; sourceTree = "<group>"; };
 		9C0910901747242500124867 /* checkBoxes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = checkBoxes.h; sourceTree = "<group>"; };
@@ -105,26 +111,35 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		695900001731BDC400295E85 /* Supporting Files */ = {
+		690450AB1754CCB300D4C3A2 /* Images */ = {
 			isa = PBXGroup;
 			children = (
 				9C09108C17471DEA00124867 /* checkbox-off.png */,
+				69C6D30D1750591000E748C8 /* Icon.jpg */,
 				9C09108D17471DEA00124867 /* checkbox-on.png */,
 				6986CCCE1742DA4900E40E46 /* MyIcon-1.png */,
 				6986CCCF1742DA4900E40E46 /* MyIcon.png */,
 				69CB87951741632D00C1DE01 /* CCLogo1-2.png */,
 				69CB8793174162EC00C1DE01 /* CCLogo1-1.png */,
 				69CB878F17414FAF00C1DE01 /* CCLogo1.png */,
-				9C09108A1747159C00124867 /* CCBackground.png */,
+			);
+			name = Images;
+			sourceTree = "<group>";
+		};
+		695900001731BDC400295E85 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				690450AB1754CCB300D4C3A2 /* Images */,
 				695900011731BDC400295E85 /* Christian Challenge-Info.plist */,
 				695900021731BDC400295E85 /* InfoPlist.strings */,
 				695900051731BDC400295E85 /* main.m */,
 				695900071731BDC400295E85 /* Christian Challenge-Prefix.pch */,
-				6959000B1731BDC400295E85 /* Default.png */,
-				6959000D1731BDC400295E85 /* Default@2x.png */,
-				6959000F1731BDC400295E85 /* Default-568h@2x.png */,
 				69CB878C1741459000C1DE01 /* LoginViewController.h */,
 				69CB878D1741459000C1DE01 /* LoginViewController.m */,
+				69C6D30F17505DCD00E748C8 /* SignUpViewController.h */,
+				69C6D31017505DCD00E748C8 /* SignUpViewController.m */,
+				694BA50A175152A9004D4CC4 /* ProfileViewController.h */,
+				694BA50B175152A9004D4CC4 /* ProfileViewController.m */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -132,6 +147,9 @@
 		6959FFED1731BDC300295E85 = {
 			isa = PBXGroup;
 			children = (
+				69C6D3211750650B00E748C8 /* Default-568h@2x.png */,
+				69C6D31F1750650200E748C8 /* Default@2x.png */,
+				69C6D31D175064FD00E748C8 /* Default.png */,
 				6959FFFF1731BDC400295E85 /* Christian Challenge */,
 				6959FFF81731BDC400295E85 /* Frameworks */,
 				6959FFF71731BDC400295E85 /* Products */,
@@ -233,18 +251,18 @@
 			buildActionMask = 2147483647;
 			files = (
 				695900041731BDC400295E85 /* InfoPlist.strings in Resources */,
-				6959000C1731BDC400295E85 /* Default.png in Resources */,
-				6959000E1731BDC400295E85 /* Default@2x.png in Resources */,
-				695900101731BDC400295E85 /* Default-568h@2x.png in Resources */,
 				6959001A1731BF9700295E85 /* MainStoryboard.storyboard in Resources */,
 				69CB879017414FAF00C1DE01 /* CCLogo1.png in Resources */,
 				69CB8794174162EC00C1DE01 /* CCLogo1-1.png in Resources */,
 				69CB87961741632D00C1DE01 /* CCLogo1-2.png in Resources */,
 				6986CCD01742DA4900E40E46 /* MyIcon-1.png in Resources */,
 				6986CCD11742DA4900E40E46 /* MyIcon.png in Resources */,
-				9C09108B1747159C00124867 /* CCBackground.png in Resources */,
 				9C09108E17471DEA00124867 /* checkbox-off.png in Resources */,
 				9C09108F17471DEA00124867 /* checkbox-on.png in Resources */,
+				69C6D30E1750591000E748C8 /* Icon.jpg in Resources */,
+				69C6D31E175064FD00E748C8 /* Default.png in Resources */,
+				69C6D3201750650200E748C8 /* Default@2x.png in Resources */,
+				69C6D3221750650C00E748C8 /* Default-568h@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -260,6 +278,8 @@
 				695900181731BE5200295E85 /* ChallengeViewController.m in Sources */,
 				69CB878E1741459000C1DE01 /* LoginViewController.m in Sources */,
 				9C0910921747242500124867 /* checkBoxes.m in Sources */,
+				69C6D31117505DCE00E748C8 /* SignUpViewController.m in Sources */,
+				694BA50C175152A9004D4CC4 /* ProfileViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
