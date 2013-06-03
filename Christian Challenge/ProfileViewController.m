@@ -7,7 +7,9 @@
 //
 
 #import "ProfileViewController.h"
-#import "ChallengeViewController.h";
+#import "ChallengeViewController.h"
+#import "AppDelegate.h"
+
 
 @interface ProfileViewController ()
 
@@ -18,6 +20,7 @@
 @synthesize username;
 @synthesize email;
 @synthesize challenge;
+@synthesize day;
 
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
@@ -48,25 +51,54 @@
     
     //WHAT I WANTED TO DO WAS PULL INFORMATION FROM PARSE AND COMPARE INFORMATION FROM CLASS CHRISTIANS AND CLASS USERS. IF USER NAME MATCHES CHRISTIAN THEN LOAD PROFILE
     
-    PFObject *User = [PFObject objectWithClassName:@"Christians"];
+    
+//
+    //
+//    
+//
+    //Query the Profile class in parse
+    PFQuery *query = [PFQuery queryWithClassName:@"Profiles"];
+    //Searches for the current users name in the profile queary
+    [query whereKey:@"Username" equalTo:[[PFUser currentUser]objectForKey:@"username"]];
+    //Makes an object out of profile
+    [query getFirstObjectInBackgroundWithBlock:^(PFObject *object, NSError *error) {
+        //Checks to see if object was found
+        if (!object) {
+            NSLog(@"The getFirstObject request failed.");
+        } else {
+            // The find succeeded.
+            NSLog(@"Successfully retrieved the object.");
+            //Loads information from profile on to page
+            username.text = [object objectForKey:@"Username"];
+            email.text = [object objectForKey:@"Email"];
+            challenge.text = [object objectForKey:@"Challenge"];
+            day.text = [[object objectForKey:@"Day"]stringValue];
+            
+        }
+    }];
     
     
-    NSString * userName = [User objectForKey:@"username"];
-    NSString * userEmail = [User objectForKey:@"email"];
-    NSString * challenges = @"30/30";
     
     
-
-    PFQuery *query = [User objectForKey:@"username"];
     
-
-   // PFObject *User = [query getObjectWithId:[[PFUser currentUser]objectForKey:@"username"]];
+    //PFQuery *query = [PFQuery queryWithClassName:@"Profiles"];
+    
+    
+    
+    
+    
+  //  [query whereKey:@"Username" equalTo:[[PFUser currentUser]objectForKey:@"username"]];
+    //NSString *profileName = [query findObjects];
+    
+    
+    
+    //PFObject *User = [PFObject objectWithClassName:@"Christians"];
  
+    AppDelegate *appDelegate = (AppDelegate *)[[UIApplication sharedApplication]delegate];
     
-    username.text = [User objectForKey:@"username"];
-    username.text = [User objectForKey:@"username"];
-    email.text = [User objectForKey:@"email"];
-    challenge.text = [User objectForKey:@"Challenge"];
+    username.text = [appDelegate.record objectForKey:@"Username"];
+    email.text = [appDelegate.record objectForKey:@"Email"];
+    challenge.text = [appDelegate.record objectForKey:@"Challenge"];
     
   
     

@@ -13,6 +13,10 @@
 @implementation AppDelegate
 
 //@synthesize challenge;
+@synthesize record;
+@synthesize pName;
+
+
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
@@ -21,7 +25,7 @@
                   clientKey:@"lpIOAEXW2OE7GAwf4G16Ye1ph8AVsaOKIJ3IR3Dg"];
     
     [PFAnalytics trackAppOpenedWithLaunchOptions:launchOptions];
-    
+    record = [PFObject objectWithClassName:@"Profiles"];
     
     
     return YES;
@@ -49,6 +53,7 @@
 - (void)applicationDidBecomeActive:(UIApplication *)application
 {
     // Restart any tasks that were paused (or not yet started) while the application was inactive. If the application was previously in the background, optionally refresh the user interface.
+    
 }
 
 - (void)applicationWillTerminate:(UIApplication *)application

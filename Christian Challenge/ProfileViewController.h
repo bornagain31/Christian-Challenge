@@ -12,8 +12,9 @@
 
 //Creates outlets for profile page
 @property (strong, nonatomic) IBOutlet UILabel *username;
-@property (strong, nonatomic) IBOutlet UILabel *email;
-@property (strong, nonatomic) IBOutlet UILabel *challenge;
+@property (strong, nonatomic) IBOutlet UITextField *email;
+@property (strong, nonatomic) IBOutlet UITextField *challenge;
+@property (strong, nonatomic) IBOutlet UITextField *day;
 
 
 @end

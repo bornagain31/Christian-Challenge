@@ -11,9 +11,18 @@
 #import "LoginViewController.h"
 
 
+ NSString *userName;
+
 @interface AppDelegate : UIResponder <UIApplicationDelegate>
+{
+    PFObject *record;
+    NSString *pName;
+}
 
 @property (strong, nonatomic) UIWindow *window;
+@property (strong, nonatomic) PFObject *record;
+@property (strong, nonatomic) NSString *pName;
+
 //@property (strong, nonatomic) UIViewController *challenge;
 
 

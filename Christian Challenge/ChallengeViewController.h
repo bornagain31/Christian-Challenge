@@ -10,22 +10,16 @@
 #import <Parse/Parse.h>
 
 
-@class UserObject;
 
 @interface ChallengeViewController : UIViewController <PFLogInViewControllerDelegate, PFSignUpViewControllerDelegate>//, UIPickerViewDataSource, UIPickerViewDelegate>
 
-//@property (strong, nonatomic) IBOutlet UITextField *name;
-//@property (strong, nonatomic) IBOutlet UITextField *email;
-//@property (strong, nonatomic) IBOutlet UITextField *pickChallenge;
-//@property (strong, nonatomic) IBOutlet UITextField *translation;
-//@property (strong, nonatomic) UIStoryboard *storyboard;
-//@property (strong, nonatomic) IBOutlet IBOutlet UIPickerView *challengePicker;
-//@property (strong, nonatomic) IBOutlet UIPickerView *transPicker;
-//@property (strong, nonatomic) NSArray *translations;
-//@property (strong, nonatomic) NSArray *challenges;
-//
-//
-//-(IBAction)transPicker:(id)sender;
+{
+    NSString *textToPass;
+}
+
+@property (retain, nonatomic) IBOutlet UIProgressView *progress;
+@property (retain, nonatomic) IBOutlet UILabel *day;
+
 //-(IBAction)getFit:(id)sender;
 
 
