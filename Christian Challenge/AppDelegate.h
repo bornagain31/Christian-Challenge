@@ -18,6 +18,7 @@
     PFObject *record;
     NSString *pName;
 }
+@property (strong, nonatomic) UIProgressView *myProgress;
 
 @property (strong, nonatomic) UIWindow *window;
 @property (strong, nonatomic) PFObject *record;

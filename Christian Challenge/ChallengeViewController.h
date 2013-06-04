@@ -16,7 +16,9 @@
 {
     NSString *textToPass;
 }
-
+@property (strong, nonatomic) UIImage *isCompleted;
+@property (strong, nonatomic) UIImage *notCompleted;
+@property (strong, nonatomic) IBOutlet UIButton *completedButton;
 @property (retain, nonatomic) IBOutlet UIProgressView *progress;
 @property (retain, nonatomic) IBOutlet UILabel *day;
 

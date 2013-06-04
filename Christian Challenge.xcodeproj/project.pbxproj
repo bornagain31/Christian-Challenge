@@ -19,6 +19,7 @@
 		6986CCD01742DA4900E40E46 /* MyIcon-1.png in Resources */ = {isa = PBXBuildFile; fileRef = 6986CCCE1742DA4900E40E46 /* MyIcon-1.png */; };
 		6986CCD11742DA4900E40E46 /* MyIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = 6986CCCF1742DA4900E40E46 /* MyIcon.png */; };
 		6994A8E217553DAA00EA0744 /* getFitButton.PNG in Resources */ = {isa = PBXBuildFile; fileRef = 6994A8E117553DAA00EA0744 /* getFitButton.PNG */; };
+		69997591175E57EE00D795F1 /* Completed.png in Resources */ = {isa = PBXBuildFile; fileRef = 6999758F175E57EE00D795F1 /* Completed.png */; };
 		69C5D458173BC2980000E5EE /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 69C5D457173BC2980000E5EE /* Parse.framework */; };
 		69C5D45A173BC3830000E5EE /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 69C5D459173BC3830000E5EE /* AudioToolbox.framework */; };
 		69C5D45C173BC38A0000E5EE /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 69C5D45B173BC38A0000E5EE /* CFNetwork.framework */; };
@@ -38,6 +39,7 @@
 		69CB879017414FAF00C1DE01 /* CCLogo1.png in Resources */ = {isa = PBXBuildFile; fileRef = 69CB878F17414FAF00C1DE01 /* CCLogo1.png */; };
 		69CB8794174162EC00C1DE01 /* CCLogo1-1.png in Resources */ = {isa = PBXBuildFile; fileRef = 69CB8793174162EC00C1DE01 /* CCLogo1-1.png */; };
 		69CB87961741632D00C1DE01 /* CCLogo1-2.png in Resources */ = {isa = PBXBuildFile; fileRef = 69CB87951741632D00C1DE01 /* CCLogo1-2.png */; };
+		69DE323D175E5CF30073379B /* NotCompleted.png in Resources */ = {isa = PBXBuildFile; fileRef = 69DE323C175E5CF30073379B /* NotCompleted.png */; };
 		9C09108E17471DEA00124867 /* checkbox-off.png in Resources */ = {isa = PBXBuildFile; fileRef = 9C09108C17471DEA00124867 /* checkbox-off.png */; };
 		9C09108F17471DEA00124867 /* checkbox-on.png in Resources */ = {isa = PBXBuildFile; fileRef = 9C09108D17471DEA00124867 /* checkbox-on.png */; };
 		9C0910921747242500124867 /* checkBoxes.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C0910911747242500124867 /* checkBoxes.m */; };
@@ -62,6 +64,7 @@
 		6986CCCE1742DA4900E40E46 /* MyIcon-1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "MyIcon-1.png"; sourceTree = "<group>"; };
 		6986CCCF1742DA4900E40E46 /* MyIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = MyIcon.png; sourceTree = "<group>"; };
 		6994A8E117553DAA00EA0744 /* getFitButton.PNG */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = getFitButton.PNG; path = ../../Desktop/getFitButton.PNG; sourceTree = "<group>"; };
+		6999758F175E57EE00D795F1 /* Completed.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Completed.png; sourceTree = "<group>"; };
 		69C5D457173BC2980000E5EE /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Parse.framework; sourceTree = "<group>"; };
 		69C5D459173BC3830000E5EE /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
 		69C5D45B173BC38A0000E5EE /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
@@ -83,6 +86,7 @@
 		69CB878F17414FAF00C1DE01 /* CCLogo1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = CCLogo1.png; sourceTree = "<group>"; };
 		69CB8793174162EC00C1DE01 /* CCLogo1-1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "CCLogo1-1.png"; sourceTree = "<group>"; };
 		69CB87951741632D00C1DE01 /* CCLogo1-2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "CCLogo1-2.png"; sourceTree = "<group>"; };
+		69DE323C175E5CF30073379B /* NotCompleted.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = NotCompleted.png; sourceTree = "<group>"; };
 		9C09108C17471DEA00124867 /* checkbox-off.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "checkbox-off.png"; sourceTree = "<group>"; };
 		9C09108D17471DEA00124867 /* checkbox-on.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "checkbox-on.png"; sourceTree = "<group>"; };
 		9C0910901747242500124867 /* checkBoxes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = checkBoxes.h; sourceTree = "<group>"; };
@@ -116,6 +120,8 @@
 		690450AB1754CCB300D4C3A2 /* Images */ = {
 			isa = PBXGroup;
 			children = (
+				69DE323C175E5CF30073379B /* NotCompleted.png */,
+				6999758F175E57EE00D795F1 /* Completed.png */,
 				9C09108C17471DEA00124867 /* checkbox-off.png */,
 				69C6D30D1750591000E748C8 /* Icon.jpg */,
 				9C09108D17471DEA00124867 /* checkbox-on.png */,
@@ -267,6 +273,8 @@
 				69C6D3201750650200E748C8 /* Default@2x.png in Resources */,
 				69C6D3221750650C00E748C8 /* Default-568h@2x.png in Resources */,
 				6994A8E217553DAA00EA0744 /* getFitButton.PNG in Resources */,
+				69997591175E57EE00D795F1 /* Completed.png in Resources */,
+				69DE323D175E5CF30073379B /* NotCompleted.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

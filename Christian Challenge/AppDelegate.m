@@ -15,6 +15,7 @@
 //@synthesize challenge;
 @synthesize record;
 @synthesize pName;
+@synthesize myProgress;
 
 
 
@@ -26,7 +27,7 @@
     
     [PFAnalytics trackAppOpenedWithLaunchOptions:launchOptions];
     record = [PFObject objectWithClassName:@"Profiles"];
-    
+    myProgress.progress = 1;
     
     return YES;
     

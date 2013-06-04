@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ProfileViewController : UIViewController <UIImagePickerControllerDelegate, UINavigationControllerDelegate>
+@interface ProfileViewController : UIViewController <UIImagePickerControllerDelegate, UINavigationControllerDelegate, PFLogInViewControllerDelegate, PFSignUpViewControllerDelegate>
 
 
 
@@ -16,6 +16,7 @@
 @property (nonatomic, retain) IBOutlet UIImageView *imageView;
 @property (strong, nonatomic) UIImagePickerController *mediaPicker;
 @property (weak, nonatomic) IBOutlet UIButton *button;
+@property (strong, nonatomic) UIProgressView *progress;
 
 @property (strong, nonatomic) IBOutlet UILabel *username;
 @property (strong, nonatomic) IBOutlet UITextField *email;
