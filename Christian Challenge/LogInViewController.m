@@ -37,6 +37,8 @@
     [self.logInView.logo setFrame:CGRectMake(66.5f, 70.0f, 187.0f, 58.5f)];
     //custom logo size
     //[self.logInView.logo setFrame:CGRectMake(66.5f, 70.0f, 240.0f, 90.0f)];
+    
+    
    
     
 }
