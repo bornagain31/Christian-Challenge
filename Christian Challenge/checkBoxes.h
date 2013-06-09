@@ -10,13 +10,17 @@
 
 @interface checkBoxes : UIButton
 
-@property (strong, nonatomic) IBOutlet UIButton *checkboxout;
+@property (strong, nonatomic) UIButton *checkboxout;
+@property (strong, nonatomic) UIButton *completed;
 
 @property (strong, nonatomic) UIImage *isChecked;
 @property (strong, nonatomic) UIImage *notChecked;
 
+@property BOOL checked;
+
 
 - (IBAction)checkbox:(id)sender;
+
 
 
 @end

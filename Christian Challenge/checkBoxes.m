@@ -16,21 +16,24 @@
 @synthesize notChecked;
 
 
+@synthesize checked;
 
 - (void)checkbox:(id)sender
 {
-    isChecked = [UIImage imageNamed:@"checkbox-on.png"];
-    notChecked = [UIImage imageNamed:@"checkbox-off.png"];
+    isChecked = [UIImage imageNamed:@"CCCheckBoxOnButton.png"];
+    notChecked = [UIImage imageNamed:@"CCCheckBoxOffButton.png"];
     
     checkboxout.selected = !checkboxout.selected; // toggle the selected property, just a simple BOOL
     
     if (checkboxout.selected)
     {
         [checkboxout setImage:isChecked forState:UIControlStateSelected];
+        checked = YES;
     }
     else
     {
         [checkboxout setImage:notChecked forState:UIControlStateNormal];
+        checked = NO;
     }
 }
 
@@ -43,7 +46,10 @@
     }
     return self;
 }
-
+-(void)checkComplete{
+    
+    
+}
 /*
 // Only override drawRect: if you perform custom drawing.
 // An empty implementation adversely affects performance during animation.

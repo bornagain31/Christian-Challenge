@@ -32,7 +32,7 @@
     //self.logInView.passwordField.backgroundColor = [UIColor colorWithWhite:1.0 alpha:0.2];
     
     //Add logo to top of Login Screen
-    self.logInView.logo = [[UIImageView alloc]initWithImage:[UIImage imageNamed:@"CCLogo1-2.png"]];
+    self.logInView.logo = [[UIImageView alloc]initWithImage:[UIImage imageNamed:@"CCLogo.png"]];
     //default logo size
     [self.logInView.logo setFrame:CGRectMake(66.5f, 70.0f, 187.0f, 58.5f)];
     //custom logo size

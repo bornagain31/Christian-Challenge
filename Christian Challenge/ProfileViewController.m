@@ -48,20 +48,31 @@
     //LoginViewController *login = [[LoginViewController alloc]init];
     
     
+    
+    
     if (![PFUser currentUser]) { // No user logged in
         // Create the log in view controller
         LoginViewController *login = [[LoginViewController alloc] init];
-        [login setDelegate:self]; // Set ourselves as the delegate
+        
+         [login setDelegate:self]; // Set ourselves as the delegate
+        
+        login.fields = PFLogInFieldsUsernameAndPassword | PFLogInFieldsLogInButton |PFLogInFieldsTwitter | PFLogInFieldsFacebook | PFLogInFieldsSignUpButton;
+        
+       
+        
         
         // Create the sign up view controller
         SignUpViewController *signUpViewController = [[SignUpViewController alloc] init];
         [signUpViewController setDelegate:self]; // Set ourselves as the delegate
+
         
         // Assign our sign up controller to be displayed from the login controller
         [login setSignUpController:signUpViewController];
         
         // Present the log in view controller
         [self presentViewController:login animated:YES completion:NULL];
+        
+        
     }
     
 
@@ -87,7 +98,6 @@
 - (void)logInViewController:(PFLogInViewController *)logInController didFailToLogInWithError:(NSError *)error {
     NSLog(@"Failed to log in...");
 }
-
 // Sent to the delegate when the log in screen is dismissed.
 - (void)logInViewControllerDidCancelLogIn:(PFLogInViewController *)logInController {
     [self.navigationController popViewControllerAnimated:YES];
@@ -112,6 +122,47 @@
 
 -(void)logInViewController:(PFLogInViewController *)logInController didLogInUser:(PFUser *)user
 {
+    
+    
+    [FBRequestConnection startForMeWithCompletionHandler:^(FBRequestConnection *connection, id result, NSError *error) {
+        if(!error){
+            //Set user's information
+            NSString *facebookID = [result objectForKey:@"id"];
+            NSString *facebookName = [result objectForKey:@"name"];
+            
+            if(facebookName && facebookName != 0){
+                [[PFUser currentUser]setObject:facebookName forKey:@"displayName"];
+            }
+            if(facebookID && facebookID != 0){
+                [[PFUser currentUser]setObject:facebookID forKey:@"facebookID"];
+            }
+            
+            [[PFUser currentUser]saveInBackgroundWithBlock:^(BOOL succeeded, NSError *error) {
+                if(!error){
+                    NSArray *data = [result objectForKey:@"data"];
+                    NSMutableArray *facebookIds = [[NSMutableArray alloc]initWithCapacity:data.count];
+                    for(NSDictionary *friendData in data){
+                        [facebookIds addObject:[friendData objectForKey:@"id"]];
+                    }
+                    
+                    [[PFUser currentUser]setObject:facebookIds forKey:@"facebookFriends"];
+                    [[PFUser currentUser]saveInBackgroundWithBlock:^(BOOL succeeded, NSError *error) {
+                        //We are in!
+                        //MBProgressHud hideHudForView:self.view andimated:YES];
+                        [self dismissViewControllerAnimated:YES completion:NULL];
+                    }];
+                }else{
+                    
+                }
+            }];
+        }
+        
+        
+                
+}];
+    
+    
+    
     
     
     //Query the Profile class in parse
@@ -146,8 +197,7 @@
                 username.text = [object objectForKey:@"Username"];
                 email.text = [object objectForKey:@"Email"];
                 challenge.text = [object objectForKey:@"Challenge"];
-                day.text = [[object objectForKey:@"Day"]stringValue];
-            
+            day.text = [[object objectForKey:@"    Day"]stringValue];
             
            // day.text = [[object objectForKey:@"Day"]stringValue];
         }
@@ -356,64 +406,7 @@
     
     
     
-    //THIS IS WHERE and HOW I AM TRYING TO GRAB INFORMATION TO PUT INTO PROFILE PAGE -- NOT WORKING
-    
-    //WHAT I WANTED TO DO WAS PULL INFORMATION FROM PARSE AND COMPARE INFORMATION FROM CLASS CHRISTIANS AND CLASS USERS. IF USER NAME MATCHES CHRISTIAN THEN LOAD PROFILE
 
-//    
-//    //Query the Profile class in parse
-//    PFQuery *query = [PFQuery queryWithClassName:@"Profiles"];
-//    [query whereKey:@"Username" equalTo:[[PFUser currentUser]objectForKey:@"username"]];
-//    //Makes an object out of profile
-//    [query getFirstObjectInBackgroundWithBlock:^(PFObject *object, NSError *error) {
-//        //Checks to see if object was found
-//        if (!object) {
-//            NSLog(@"The getFirstObject request failed.");
-//        }
-//        else {
-//        // The find succeeded.
-//    
-//            PFFile *imageFile = [object objectForKey:@"Picture"];
-//            [imageFile getDataInBackgroundWithBlock:^(NSData *data, NSError *error) {
-//            if(!error)
-//            {
-//            button.hidden = TRUE;
-//            imageView.image = [UIImage imageWithData:data];
-//            }
-//        }];
-//            
-//            NSLog(@"Successfully retrieved the object.");
-//            //Loads information from profile on to page
-//            username.text = [object objectForKey:@"Username"];
-//            email.text = [object objectForKey:@"Email"];
-//            challenge.text = [object objectForKey:@"Challenge"];
-//            day.text = [[object objectForKey:@"Day"]stringValue];
-//}
-//}];
-//
-      
-    
-    
-    //PFQuery *query = [PFQuery queryWithClassName:@"Profiles"];
-    
-    
-    
-    
-    
-  //  [query whereKey:@"Username" equalTo:[[PFUser currentUser]objectForKey:@"username"]];
-    //NSString *profileName = [query findObjects];
-    
-    
-    
-    //PFObject *User = [PFObject objectWithClassName:@"Christians"];
- 
-//    AppDelegate *appDelegate = (AppDelegate *)[[UIApplication sharedApplication]delegate];
-//    
-//    username.text = [appDelegate.record objectForKey:@"Username"];
-//    email.text = [appDelegate.record objectForKey:@"Email"];
-//    challenge.text = [appDelegate.record objectForKey:@"Challenge"];
-//    
-    
     
 }
 

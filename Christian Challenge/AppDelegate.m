@@ -25,6 +25,10 @@
     [Parse setApplicationId:@"9HqNBXqgDFqgRagdPpxVrqFJ0ItGc05xid4srD6V"
                   clientKey:@"lpIOAEXW2OE7GAwf4G16Ye1ph8AVsaOKIJ3IR3Dg"];
     
+    [PFFacebookUtils initializeFacebook];
+    
+    //[PFTwitterUtils initialize];
+    
     [PFAnalytics trackAppOpenedWithLaunchOptions:launchOptions];
     record = [PFObject objectWithClassName:@"Profiles"];
     myProgress.progress = 1;
@@ -33,6 +37,14 @@
     
     
 }
+
+//- (BOOL)application:(UIApplication *)application handleOpenURL:(NSURL *)url {
+//    return [PFFacebookUtils handleOpenURL:url];
+//}
+//
+//- (BOOL)application:(UIApplication *)application openURL:(NSURL *)url sourceApplication:(NSString *)sourceApplication annotation:(id)annotation {
+//    return [PFFacebookUtils handleOpenURL:url];
+//}
 
 - (void)applicationWillResignActive:(UIApplication *)application
 {
