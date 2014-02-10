@@ -7,6 +7,82 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		448406AD1823520700ACF662 /* FacebookSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 448406AC1823520700ACF662 /* FacebookSDK.framework */; };
+		448407131823647800ACF662 /* workout-btn-finish.png in Resources */ = {isa = PBXBuildFile; fileRef = 448406AF1823647800ACF662 /* workout-btn-finish.png */; };
+		448407141823647800ACF662 /* workout-btn-finish2.png in Resources */ = {isa = PBXBuildFile; fileRef = 448406B01823647800ACF662 /* workout-btn-finish2.png */; };
+		448407151823647800ACF662 /* workout-btn-finish2@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 448406B11823647800ACF662 /* workout-btn-finish2@2x.png */; };
+		448407161823647800ACF662 /* workout-btn-finish@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 448406B21823647800ACF662 /* workout-btn-finish@2x.png */; };
+		448407171823647800ACF662 /* workout-btn-pause.png in Resources */ = {isa = PBXBuildFile; fileRef = 448406B31823647800ACF662 /* workout-btn-pause.png */; };
+		448407181823647800ACF662 /* workout-btn-pause@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 448406B41823647800ACF662 /* workout-btn-pause@2x.png */; };
+		448407191823647800ACF662 /* workouts-header.png in Resources */ = {isa = PBXBuildFile; fileRef = 448406B51823647800ACF662 /* workouts-header.png */; };
+		4484071A1823647800ACF662 /* workouts-header@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 448406B61823647800ACF662 /* workouts-header@2x.png */; };
+		4484071B1823647800ACF662 /* switchBlueBg.png in Resources */ = {isa = PBXBuildFile; fileRef = 448406B91823647800ACF662 /* switchBlueBg.png */; };
+		4484071C1823647800ACF662 /* switchOffPlain.png in Resources */ = {isa = PBXBuildFile; fileRef = 448406BA1823647800ACF662 /* switchOffPlain.png */; };
+		4484071D1823647800ACF662 /* switchThumb.png in Resources */ = {isa = PBXBuildFile; fileRef = 448406BB1823647800ACF662 /* switchThumb.png */; };
+		4484071E1823647800ACF662 /* UICustomSwitch.m in Sources */ = {isa = PBXBuildFile; fileRef = 448406BD1823647800ACF662 /* UICustomSwitch.m */; };
+		4484071F1823647800ACF662 /* tabbar-bg.png in Resources */ = {isa = PBXBuildFile; fileRef = 448406C01823647800ACF662 /* tabbar-bg.png */; };
+		448407201823647800ACF662 /* tabbar-bg@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 448406C11823647800ACF662 /* tabbar-bg@2x.png */; };
+		448407211823647800ACF662 /* tabbtn-bg-selected.png in Resources */ = {isa = PBXBuildFile; fileRef = 448406C21823647800ACF662 /* tabbtn-bg-selected.png */; };
+		448407221823647800ACF662 /* tabbtn-bg-selected@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 448406C31823647800ACF662 /* tabbtn-bg-selected@2x.png */; };
+		448407231823647800ACF662 /* tabbtn-history-normal.png in Resources */ = {isa = PBXBuildFile; fileRef = 448406C41823647800ACF662 /* tabbtn-history-normal.png */; };
+		448407241823647800ACF662 /* tabbtn-history-normal@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 448406C51823647800ACF662 /* tabbtn-history-normal@2x.png */; };
+		448407251823647800ACF662 /* tabbtn-history-selected.png in Resources */ = {isa = PBXBuildFile; fileRef = 448406C61823647800ACF662 /* tabbtn-history-selected.png */; };
+		448407261823647800ACF662 /* tabbtn-history-selected@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 448406C71823647800ACF662 /* tabbtn-history-selected@2x.png */; };
+		448407271823647800ACF662 /* tabbtn-newactivity-normal.png in Resources */ = {isa = PBXBuildFile; fileRef = 448406C81823647800ACF662 /* tabbtn-newactivity-normal.png */; };
+		448407281823647800ACF662 /* tabbtn-newactivity-normal@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 448406C91823647800ACF662 /* tabbtn-newactivity-normal@2x.png */; };
+		448407291823647800ACF662 /* tabbtn-newactivity-selected.png in Resources */ = {isa = PBXBuildFile; fileRef = 448406CA1823647800ACF662 /* tabbtn-newactivity-selected.png */; };
+		4484072A1823647800ACF662 /* tabbtn-newactivity-selected@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 448406CB1823647800ACF662 /* tabbtn-newactivity-selected@2x.png */; };
+		4484072B1823647800ACF662 /* tabbtn-routes-normal.png in Resources */ = {isa = PBXBuildFile; fileRef = 448406CC1823647800ACF662 /* tabbtn-routes-normal.png */; };
+		4484072C1823647800ACF662 /* tabbtn-routes-normal@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 448406CD1823647800ACF662 /* tabbtn-routes-normal@2x.png */; };
+		4484072D1823647800ACF662 /* tabbtn-routes-selected.png in Resources */ = {isa = PBXBuildFile; fileRef = 448406CE1823647800ACF662 /* tabbtn-routes-selected.png */; };
+		4484072E1823647800ACF662 /* tabbtn-routes-selected@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 448406CF1823647800ACF662 /* tabbtn-routes-selected@2x.png */; };
+		4484072F1823647800ACF662 /* tabbtn-workouts-normal.png in Resources */ = {isa = PBXBuildFile; fileRef = 448406D01823647800ACF662 /* tabbtn-workouts-normal.png */; };
+		448407301823647800ACF662 /* tabbtn-workouts-normal@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 448406D11823647800ACF662 /* tabbtn-workouts-normal@2x.png */; };
+		448407311823647800ACF662 /* tabbtn-workouts-selected.png in Resources */ = {isa = PBXBuildFile; fileRef = 448406D21823647800ACF662 /* tabbtn-workouts-selected.png */; };
+		448407321823647800ACF662 /* tabbtn-workouts-selected@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 448406D31823647800ACF662 /* tabbtn-workouts-selected@2x.png */; };
+		448407331823647800ACF662 /* UICustomTabbarButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 448406D51823647800ACF662 /* UICustomTabbarButton.m */; };
+		448407341823647800ACF662 /* UICustomTabbarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 448406D71823647800ACF662 /* UICustomTabbarController.m */; };
+		448407351823647800ACF662 /* CustomNavigationBarView.m in Sources */ = {isa = PBXBuildFile; fileRef = 448406DA1823647800ACF662 /* CustomNavigationBarView.m */; };
+		448407361823647800ACF662 /* CustomNavViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 448406DC1823647800ACF662 /* CustomNavViewController.m */; };
+		448407371823647800ACF662 /* nav-bg.png in Resources */ = {isa = PBXBuildFile; fileRef = 448406DE1823647800ACF662 /* nav-bg.png */; };
+		448407381823647800ACF662 /* nav-bg@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 448406DF1823647800ACF662 /* nav-bg@2x.png */; };
+		448407391823647800ACF662 /* nav-lbtn.png in Resources */ = {isa = PBXBuildFile; fileRef = 448406E01823647800ACF662 /* nav-lbtn.png */; };
+		4484073A1823647800ACF662 /* nav-lbtn@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 448406E11823647800ACF662 /* nav-lbtn@2x.png */; };
+		4484073B1823647800ACF662 /* nav-rbtn.png in Resources */ = {isa = PBXBuildFile; fileRef = 448406E21823647800ACF662 /* nav-rbtn.png */; };
+		4484073C1823647800ACF662 /* nav-rbtn@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 448406E31823647800ACF662 /* nav-rbtn@2x.png */; };
+		4484073D1823647800ACF662 /* UICustomNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 448406E51823647800ACF662 /* UICustomNavigationController.m */; };
+		4484073E1823647800ACF662 /* checkbox-checked.png in Resources */ = {isa = PBXBuildFile; fileRef = 448406E81823647800ACF662 /* checkbox-checked.png */; };
+		4484073F1823647800ACF662 /* checkbox-checked@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 448406E91823647800ACF662 /* checkbox-checked@2x.png */; };
+		448407401823647800ACF662 /* checkbox-normal.png in Resources */ = {isa = PBXBuildFile; fileRef = 448406EA1823647800ACF662 /* checkbox-normal.png */; };
+		448407411823647800ACF662 /* checkbox-normal@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 448406EB1823647800ACF662 /* checkbox-normal@2x.png */; };
+		448407421823647800ACF662 /* option-normal.png in Resources */ = {isa = PBXBuildFile; fileRef = 448406EC1823647800ACF662 /* option-normal.png */; };
+		448407431823647800ACF662 /* option-normal@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 448406ED1823647800ACF662 /* option-normal@2x.png */; };
+		448407441823647800ACF662 /* option-selected.png in Resources */ = {isa = PBXBuildFile; fileRef = 448406EE1823647800ACF662 /* option-selected.png */; };
+		448407451823647800ACF662 /* option-selected@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 448406EF1823647800ACF662 /* option-selected@2x.png */; };
+		448407461823647800ACF662 /* UICheckboxButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 448406F11823647800ACF662 /* UICheckboxButton.m */; };
+		448407471823647800ACF662 /* UIGroupCheckboxView.m in Sources */ = {isa = PBXBuildFile; fileRef = 448406F31823647800ACF662 /* UIGroupCheckboxView.m */; };
+		448407481823647800ACF662 /* progressbar-bg.png in Resources */ = {isa = PBXBuildFile; fileRef = 448406F61823647800ACF662 /* progressbar-bg.png */; };
+		448407491823647800ACF662 /* progressbar-bg@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 448406F71823647800ACF662 /* progressbar-bg@2x.png */; };
+		4484074A1823647800ACF662 /* progressbar-fill.png in Resources */ = {isa = PBXBuildFile; fileRef = 448406F81823647800ACF662 /* progressbar-fill.png */; };
+		4484074B1823647800ACF662 /* progressbar-fill@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 448406F91823647800ACF662 /* progressbar-fill@2x.png */; };
+		4484074C1823647800ACF662 /* UICustomProgressBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 448406FB1823647800ACF662 /* UICustomProgressBar.m */; };
+		4484074D1823647800ACF662 /* CustomSegmentedControl.m in Sources */ = {isa = PBXBuildFile; fileRef = 448406FE1823647800ACF662 /* CustomSegmentedControl.m */; };
+		4484074E1823647800ACF662 /* switch-left-selected.png in Resources */ = {isa = PBXBuildFile; fileRef = 448407001823647800ACF662 /* switch-left-selected.png */; };
+		4484074F1823647800ACF662 /* switch-left-selected@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 448407011823647800ACF662 /* switch-left-selected@2x.png */; };
+		448407501823647800ACF662 /* switch-left-selected@2x.psd in Resources */ = {isa = PBXBuildFile; fileRef = 448407021823647800ACF662 /* switch-left-selected@2x.psd */; };
+		448407511823647800ACF662 /* switch-left.png in Resources */ = {isa = PBXBuildFile; fileRef = 448407031823647800ACF662 /* switch-left.png */; };
+		448407521823647800ACF662 /* switch-left@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 448407041823647800ACF662 /* switch-left@2x.png */; };
+		448407531823647800ACF662 /* switch-right-selected.png in Resources */ = {isa = PBXBuildFile; fileRef = 448407051823647800ACF662 /* switch-right-selected.png */; };
+		448407541823647800ACF662 /* switch-right-selected@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 448407061823647800ACF662 /* switch-right-selected@2x.png */; };
+		448407551823647800ACF662 /* switch-right.png in Resources */ = {isa = PBXBuildFile; fileRef = 448407071823647800ACF662 /* switch-right.png */; };
+		448407561823647800ACF662 /* switch-right@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 448407081823647800ACF662 /* switch-right@2x.png */; };
+		448407571823647800ACF662 /* slider-bar.png in Resources */ = {isa = PBXBuildFile; fileRef = 4484070B1823647800ACF662 /* slider-bar.png */; };
+		448407581823647800ACF662 /* slider-bar@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4484070C1823647800ACF662 /* slider-bar@2x.png */; };
+		448407591823647800ACF662 /* slider-fill.png in Resources */ = {isa = PBXBuildFile; fileRef = 4484070D1823647800ACF662 /* slider-fill.png */; };
+		4484075A1823647800ACF662 /* slider-fill@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4484070E1823647800ACF662 /* slider-fill@2x.png */; };
+		4484075B1823647800ACF662 /* slider-pin.png in Resources */ = {isa = PBXBuildFile; fileRef = 4484070F1823647800ACF662 /* slider-pin.png */; };
+		4484075C1823647800ACF662 /* slider-pin@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 448407101823647800ACF662 /* slider-pin@2x.png */; };
+		4484075D1823647800ACF662 /* UICustomSlider.m in Sources */ = {isa = PBXBuildFile; fileRef = 448407121823647800ACF662 /* UICustomSlider.m */; };
 		6920CE271763AE3600F8985F /* CCProfilePage.png in Resources */ = {isa = PBXBuildFile; fileRef = 6920CE211763AE3600F8985F /* CCProfilePage.png */; };
 		6920CE281763AE3600F8985F /* CCLoginButton.png in Resources */ = {isa = PBXBuildFile; fileRef = 6920CE221763AE3600F8985F /* CCLoginButton.png */; };
 		6920CE291763AE3600F8985F /* CCSignUpButton.png in Resources */ = {isa = PBXBuildFile; fileRef = 6920CE231763AE3600F8985F /* CCSignUpButton.png */; };
@@ -28,13 +104,11 @@
 		6986CCD01742DA4900E40E46 /* MyIcon-1.png in Resources */ = {isa = PBXBuildFile; fileRef = 6986CCCE1742DA4900E40E46 /* MyIcon-1.png */; };
 		6986CCD11742DA4900E40E46 /* MyIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = 6986CCCF1742DA4900E40E46 /* MyIcon.png */; };
 		698E6AA0175EE161000EE2CC /* Default@2x-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 698E6A9F175EE161000EE2CC /* Default@2x-568h@2x.png */; };
-		698E6AFD175EF78C000EE2CC /* FacebookSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 698E6AFC175EF78C000EE2CC /* FacebookSDK.framework */; };
 		698E6AFF175EF82F000EE2CC /* Accounts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 698E6AFE175EF82F000EE2CC /* Accounts.framework */; };
 		698E6B01175EF8B6000EE2CC /* Social.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 698E6B00175EF8B6000EE2CC /* Social.framework */; };
 		698E6B03175EF8D3000EE2CC /* AdSupport.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 698E6B02175EF8D3000EE2CC /* AdSupport.framework */; };
 		698E6B05175EF8DD000EE2CC /* AddressBook.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 698E6B04175EF8DD000EE2CC /* AddressBook.framework */; };
 		698E6B07175EF969000EE2CC /* libsqlite3.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 698E6B06175EF969000EE2CC /* libsqlite3.0.dylib */; };
-		6994A8E217553DAA00EA0744 /* getFitButton.PNG in Resources */ = {isa = PBXBuildFile; fileRef = 6994A8E117553DAA00EA0744 /* getFitButton.PNG */; };
 		69C0FF75175E8BEA003C8DC7 /* Completed.png in Resources */ = {isa = PBXBuildFile; fileRef = 69C0FF74175E8BEA003C8DC7 /* Completed.png */; };
 		69C5D458173BC2980000E5EE /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 69C5D457173BC2980000E5EE /* Parse.framework */; };
 		69C5D45A173BC3830000E5EE /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 69C5D459173BC3830000E5EE /* AudioToolbox.framework */; };
@@ -57,6 +131,93 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		448406AC1823520700ACF662 /* FacebookSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FacebookSDK.framework; path = FacebookSDK/FacebookSDK.framework; sourceTree = "<group>"; };
+		448406AF1823647800ACF662 /* workout-btn-finish.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "workout-btn-finish.png"; sourceTree = "<group>"; };
+		448406B01823647800ACF662 /* workout-btn-finish2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "workout-btn-finish2.png"; sourceTree = "<group>"; };
+		448406B11823647800ACF662 /* workout-btn-finish2@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "workout-btn-finish2@2x.png"; sourceTree = "<group>"; };
+		448406B21823647800ACF662 /* workout-btn-finish@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "workout-btn-finish@2x.png"; sourceTree = "<group>"; };
+		448406B31823647800ACF662 /* workout-btn-pause.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "workout-btn-pause.png"; sourceTree = "<group>"; };
+		448406B41823647800ACF662 /* workout-btn-pause@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "workout-btn-pause@2x.png"; sourceTree = "<group>"; };
+		448406B51823647800ACF662 /* workouts-header.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "workouts-header.png"; sourceTree = "<group>"; };
+		448406B61823647800ACF662 /* workouts-header@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "workouts-header@2x.png"; sourceTree = "<group>"; };
+		448406B91823647800ACF662 /* switchBlueBg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = switchBlueBg.png; sourceTree = "<group>"; };
+		448406BA1823647800ACF662 /* switchOffPlain.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = switchOffPlain.png; sourceTree = "<group>"; };
+		448406BB1823647800ACF662 /* switchThumb.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = switchThumb.png; sourceTree = "<group>"; };
+		448406BC1823647800ACF662 /* UICustomSwitch.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UICustomSwitch.h; sourceTree = "<group>"; };
+		448406BD1823647800ACF662 /* UICustomSwitch.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UICustomSwitch.m; sourceTree = "<group>"; };
+		448406C01823647800ACF662 /* tabbar-bg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tabbar-bg.png"; sourceTree = "<group>"; };
+		448406C11823647800ACF662 /* tabbar-bg@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tabbar-bg@2x.png"; sourceTree = "<group>"; };
+		448406C21823647800ACF662 /* tabbtn-bg-selected.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tabbtn-bg-selected.png"; sourceTree = "<group>"; };
+		448406C31823647800ACF662 /* tabbtn-bg-selected@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tabbtn-bg-selected@2x.png"; sourceTree = "<group>"; };
+		448406C41823647800ACF662 /* tabbtn-history-normal.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tabbtn-history-normal.png"; sourceTree = "<group>"; };
+		448406C51823647800ACF662 /* tabbtn-history-normal@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tabbtn-history-normal@2x.png"; sourceTree = "<group>"; };
+		448406C61823647800ACF662 /* tabbtn-history-selected.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tabbtn-history-selected.png"; sourceTree = "<group>"; };
+		448406C71823647800ACF662 /* tabbtn-history-selected@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tabbtn-history-selected@2x.png"; sourceTree = "<group>"; };
+		448406C81823647800ACF662 /* tabbtn-newactivity-normal.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tabbtn-newactivity-normal.png"; sourceTree = "<group>"; };
+		448406C91823647800ACF662 /* tabbtn-newactivity-normal@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tabbtn-newactivity-normal@2x.png"; sourceTree = "<group>"; };
+		448406CA1823647800ACF662 /* tabbtn-newactivity-selected.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tabbtn-newactivity-selected.png"; sourceTree = "<group>"; };
+		448406CB1823647800ACF662 /* tabbtn-newactivity-selected@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tabbtn-newactivity-selected@2x.png"; sourceTree = "<group>"; };
+		448406CC1823647800ACF662 /* tabbtn-routes-normal.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tabbtn-routes-normal.png"; sourceTree = "<group>"; };
+		448406CD1823647800ACF662 /* tabbtn-routes-normal@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tabbtn-routes-normal@2x.png"; sourceTree = "<group>"; };
+		448406CE1823647800ACF662 /* tabbtn-routes-selected.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tabbtn-routes-selected.png"; sourceTree = "<group>"; };
+		448406CF1823647800ACF662 /* tabbtn-routes-selected@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tabbtn-routes-selected@2x.png"; sourceTree = "<group>"; };
+		448406D01823647800ACF662 /* tabbtn-workouts-normal.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tabbtn-workouts-normal.png"; sourceTree = "<group>"; };
+		448406D11823647800ACF662 /* tabbtn-workouts-normal@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tabbtn-workouts-normal@2x.png"; sourceTree = "<group>"; };
+		448406D21823647800ACF662 /* tabbtn-workouts-selected.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tabbtn-workouts-selected.png"; sourceTree = "<group>"; };
+		448406D31823647800ACF662 /* tabbtn-workouts-selected@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tabbtn-workouts-selected@2x.png"; sourceTree = "<group>"; };
+		448406D41823647800ACF662 /* UICustomTabbarButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UICustomTabbarButton.h; sourceTree = "<group>"; };
+		448406D51823647800ACF662 /* UICustomTabbarButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UICustomTabbarButton.m; sourceTree = "<group>"; };
+		448406D61823647800ACF662 /* UICustomTabbarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UICustomTabbarController.h; sourceTree = "<group>"; };
+		448406D71823647800ACF662 /* UICustomTabbarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UICustomTabbarController.m; sourceTree = "<group>"; };
+		448406D91823647800ACF662 /* CustomNavigationBarView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomNavigationBarView.h; sourceTree = "<group>"; };
+		448406DA1823647800ACF662 /* CustomNavigationBarView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomNavigationBarView.m; sourceTree = "<group>"; };
+		448406DB1823647800ACF662 /* CustomNavViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomNavViewController.h; sourceTree = "<group>"; };
+		448406DC1823647800ACF662 /* CustomNavViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomNavViewController.m; sourceTree = "<group>"; };
+		448406DE1823647800ACF662 /* nav-bg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "nav-bg.png"; sourceTree = "<group>"; };
+		448406DF1823647800ACF662 /* nav-bg@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "nav-bg@2x.png"; sourceTree = "<group>"; };
+		448406E01823647800ACF662 /* nav-lbtn.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "nav-lbtn.png"; sourceTree = "<group>"; };
+		448406E11823647800ACF662 /* nav-lbtn@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "nav-lbtn@2x.png"; sourceTree = "<group>"; };
+		448406E21823647800ACF662 /* nav-rbtn.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "nav-rbtn.png"; sourceTree = "<group>"; };
+		448406E31823647800ACF662 /* nav-rbtn@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "nav-rbtn@2x.png"; sourceTree = "<group>"; };
+		448406E41823647800ACF662 /* UICustomNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UICustomNavigationController.h; sourceTree = "<group>"; };
+		448406E51823647800ACF662 /* UICustomNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UICustomNavigationController.m; sourceTree = "<group>"; };
+		448406E81823647800ACF662 /* checkbox-checked.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "checkbox-checked.png"; sourceTree = "<group>"; };
+		448406E91823647800ACF662 /* checkbox-checked@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "checkbox-checked@2x.png"; sourceTree = "<group>"; };
+		448406EA1823647800ACF662 /* checkbox-normal.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "checkbox-normal.png"; sourceTree = "<group>"; };
+		448406EB1823647800ACF662 /* checkbox-normal@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "checkbox-normal@2x.png"; sourceTree = "<group>"; };
+		448406EC1823647800ACF662 /* option-normal.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "option-normal.png"; sourceTree = "<group>"; };
+		448406ED1823647800ACF662 /* option-normal@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "option-normal@2x.png"; sourceTree = "<group>"; };
+		448406EE1823647800ACF662 /* option-selected.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "option-selected.png"; sourceTree = "<group>"; };
+		448406EF1823647800ACF662 /* option-selected@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "option-selected@2x.png"; sourceTree = "<group>"; };
+		448406F01823647800ACF662 /* UICheckboxButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UICheckboxButton.h; sourceTree = "<group>"; };
+		448406F11823647800ACF662 /* UICheckboxButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UICheckboxButton.m; sourceTree = "<group>"; };
+		448406F21823647800ACF662 /* UIGroupCheckboxView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIGroupCheckboxView.h; sourceTree = "<group>"; };
+		448406F31823647800ACF662 /* UIGroupCheckboxView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UIGroupCheckboxView.m; sourceTree = "<group>"; };
+		448406F61823647800ACF662 /* progressbar-bg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "progressbar-bg.png"; sourceTree = "<group>"; };
+		448406F71823647800ACF662 /* progressbar-bg@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "progressbar-bg@2x.png"; sourceTree = "<group>"; };
+		448406F81823647800ACF662 /* progressbar-fill.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "progressbar-fill.png"; sourceTree = "<group>"; };
+		448406F91823647800ACF662 /* progressbar-fill@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "progressbar-fill@2x.png"; sourceTree = "<group>"; };
+		448406FA1823647800ACF662 /* UICustomProgressBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UICustomProgressBar.h; sourceTree = "<group>"; };
+		448406FB1823647800ACF662 /* UICustomProgressBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UICustomProgressBar.m; sourceTree = "<group>"; };
+		448406FD1823647800ACF662 /* CustomSegmentedControl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomSegmentedControl.h; sourceTree = "<group>"; };
+		448406FE1823647800ACF662 /* CustomSegmentedControl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomSegmentedControl.m; sourceTree = "<group>"; };
+		448407001823647800ACF662 /* switch-left-selected.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "switch-left-selected.png"; sourceTree = "<group>"; };
+		448407011823647800ACF662 /* switch-left-selected@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "switch-left-selected@2x.png"; sourceTree = "<group>"; };
+		448407021823647800ACF662 /* switch-left-selected@2x.psd */ = {isa = PBXFileReference; lastKnownFileType = file; path = "switch-left-selected@2x.psd"; sourceTree = "<group>"; };
+		448407031823647800ACF662 /* switch-left.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "switch-left.png"; sourceTree = "<group>"; };
+		448407041823647800ACF662 /* switch-left@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "switch-left@2x.png"; sourceTree = "<group>"; };
+		448407051823647800ACF662 /* switch-right-selected.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "switch-right-selected.png"; sourceTree = "<group>"; };
+		448407061823647800ACF662 /* switch-right-selected@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "switch-right-selected@2x.png"; sourceTree = "<group>"; };
+		448407071823647800ACF662 /* switch-right.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "switch-right.png"; sourceTree = "<group>"; };
+		448407081823647800ACF662 /* switch-right@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "switch-right@2x.png"; sourceTree = "<group>"; };
+		4484070B1823647800ACF662 /* slider-bar.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "slider-bar.png"; sourceTree = "<group>"; };
+		4484070C1823647800ACF662 /* slider-bar@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "slider-bar@2x.png"; sourceTree = "<group>"; };
+		4484070D1823647800ACF662 /* slider-fill.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "slider-fill.png"; sourceTree = "<group>"; };
+		4484070E1823647800ACF662 /* slider-fill@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "slider-fill@2x.png"; sourceTree = "<group>"; };
+		4484070F1823647800ACF662 /* slider-pin.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "slider-pin.png"; sourceTree = "<group>"; };
+		448407101823647800ACF662 /* slider-pin@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "slider-pin@2x.png"; sourceTree = "<group>"; };
+		448407111823647800ACF662 /* UICustomSlider.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UICustomSlider.h; sourceTree = "<group>"; };
+		448407121823647800ACF662 /* UICustomSlider.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UICustomSlider.m; sourceTree = "<group>"; };
 		6920CE211763AE3600F8985F /* CCProfilePage.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = CCProfilePage.png; sourceTree = "<group>"; };
 		6920CE221763AE3600F8985F /* CCLoginButton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = CCLoginButton.png; sourceTree = "<group>"; };
 		6920CE231763AE3600F8985F /* CCSignUpButton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = CCSignUpButton.png; sourceTree = "<group>"; };
@@ -84,13 +245,11 @@
 		6986CCCE1742DA4900E40E46 /* MyIcon-1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "MyIcon-1.png"; sourceTree = "<group>"; };
 		6986CCCF1742DA4900E40E46 /* MyIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = MyIcon.png; sourceTree = "<group>"; };
 		698E6A9F175EE161000EE2CC /* Default@2x-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x-568h@2x.png"; sourceTree = "<group>"; };
-		698E6AFC175EF78C000EE2CC /* FacebookSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FacebookSDK.framework; path = ../Documents/FacebookSDK/FacebookSDK.framework; sourceTree = "<group>"; };
 		698E6AFE175EF82F000EE2CC /* Accounts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accounts.framework; path = System/Library/Frameworks/Accounts.framework; sourceTree = SDKROOT; };
 		698E6B00175EF8B6000EE2CC /* Social.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Social.framework; path = System/Library/Frameworks/Social.framework; sourceTree = SDKROOT; };
 		698E6B02175EF8D3000EE2CC /* AdSupport.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AdSupport.framework; path = System/Library/Frameworks/AdSupport.framework; sourceTree = SDKROOT; };
 		698E6B04175EF8DD000EE2CC /* AddressBook.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AddressBook.framework; path = System/Library/Frameworks/AddressBook.framework; sourceTree = SDKROOT; };
 		698E6B06175EF969000EE2CC /* libsqlite3.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.0.dylib; path = usr/lib/libsqlite3.0.dylib; sourceTree = SDKROOT; };
-		6994A8E117553DAA00EA0744 /* getFitButton.PNG */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = getFitButton.PNG; path = ../../Desktop/getFitButton.PNG; sourceTree = "<group>"; };
 		69C0FF74175E8BEA003C8DC7 /* Completed.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Completed.png; sourceTree = "<group>"; };
 		69C5D457173BC2980000E5EE /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Parse.framework; sourceTree = "<group>"; };
 		69C5D459173BC3830000E5EE /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
@@ -120,6 +279,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				448406AD1823520700ACF662 /* FacebookSDK.framework in Frameworks */,
 				698E6B07175EF969000EE2CC /* libsqlite3.0.dylib in Frameworks */,
 				698E6B05175EF8DD000EE2CC /* AddressBook.framework in Frameworks */,
 				698E6B03175EF8D3000EE2CC /* AdSupport.framework in Frameworks */,
@@ -138,13 +298,210 @@
 				6959FFFA1731BDC400295E85 /* UIKit.framework in Frameworks */,
 				6959FFFC1731BDC400295E85 /* Foundation.framework in Frameworks */,
 				69C5D458173BC2980000E5EE /* Parse.framework in Frameworks */,
-				698E6AFD175EF78C000EE2CC /* FacebookSDK.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		448406AE1823647800ACF662 /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				448406AF1823647800ACF662 /* workout-btn-finish.png */,
+				448406B01823647800ACF662 /* workout-btn-finish2.png */,
+				448406B11823647800ACF662 /* workout-btn-finish2@2x.png */,
+				448406B21823647800ACF662 /* workout-btn-finish@2x.png */,
+				448406B31823647800ACF662 /* workout-btn-pause.png */,
+				448406B41823647800ACF662 /* workout-btn-pause@2x.png */,
+				448406B51823647800ACF662 /* workouts-header.png */,
+				448406B61823647800ACF662 /* workouts-header@2x.png */,
+			);
+			path = Images;
+			sourceTree = "<group>";
+		};
+		448406B71823647800ACF662 /* UICustomSwitch */ = {
+			isa = PBXGroup;
+			children = (
+				448406B81823647800ACF662 /* Images */,
+				448406BC1823647800ACF662 /* UICustomSwitch.h */,
+				448406BD1823647800ACF662 /* UICustomSwitch.m */,
+			);
+			path = UICustomSwitch;
+			sourceTree = "<group>";
+		};
+		448406B81823647800ACF662 /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				448406B91823647800ACF662 /* switchBlueBg.png */,
+				448406BA1823647800ACF662 /* switchOffPlain.png */,
+				448406BB1823647800ACF662 /* switchThumb.png */,
+			);
+			path = Images;
+			sourceTree = "<group>";
+		};
+		448406BE1823647800ACF662 /* UICustomTabbarController */ = {
+			isa = PBXGroup;
+			children = (
+				448406BF1823647800ACF662 /* Images */,
+				448406D41823647800ACF662 /* UICustomTabbarButton.h */,
+				448406D51823647800ACF662 /* UICustomTabbarButton.m */,
+				448406D61823647800ACF662 /* UICustomTabbarController.h */,
+				448406D71823647800ACF662 /* UICustomTabbarController.m */,
+			);
+			path = UICustomTabbarController;
+			sourceTree = "<group>";
+		};
+		448406BF1823647800ACF662 /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				448406C01823647800ACF662 /* tabbar-bg.png */,
+				448406C11823647800ACF662 /* tabbar-bg@2x.png */,
+				448406C21823647800ACF662 /* tabbtn-bg-selected.png */,
+				448406C31823647800ACF662 /* tabbtn-bg-selected@2x.png */,
+				448406C41823647800ACF662 /* tabbtn-history-normal.png */,
+				448406C51823647800ACF662 /* tabbtn-history-normal@2x.png */,
+				448406C61823647800ACF662 /* tabbtn-history-selected.png */,
+				448406C71823647800ACF662 /* tabbtn-history-selected@2x.png */,
+				448406C81823647800ACF662 /* tabbtn-newactivity-normal.png */,
+				448406C91823647800ACF662 /* tabbtn-newactivity-normal@2x.png */,
+				448406CA1823647800ACF662 /* tabbtn-newactivity-selected.png */,
+				448406CB1823647800ACF662 /* tabbtn-newactivity-selected@2x.png */,
+				448406CC1823647800ACF662 /* tabbtn-routes-normal.png */,
+				448406CD1823647800ACF662 /* tabbtn-routes-normal@2x.png */,
+				448406CE1823647800ACF662 /* tabbtn-routes-selected.png */,
+				448406CF1823647800ACF662 /* tabbtn-routes-selected@2x.png */,
+				448406D01823647800ACF662 /* tabbtn-workouts-normal.png */,
+				448406D11823647800ACF662 /* tabbtn-workouts-normal@2x.png */,
+				448406D21823647800ACF662 /* tabbtn-workouts-selected.png */,
+				448406D31823647800ACF662 /* tabbtn-workouts-selected@2x.png */,
+			);
+			path = Images;
+			sourceTree = "<group>";
+		};
+		448406D81823647800ACF662 /* Navbar */ = {
+			isa = PBXGroup;
+			children = (
+				448406D91823647800ACF662 /* CustomNavigationBarView.h */,
+				448406DA1823647800ACF662 /* CustomNavigationBarView.m */,
+				448406DB1823647800ACF662 /* CustomNavViewController.h */,
+				448406DC1823647800ACF662 /* CustomNavViewController.m */,
+				448406DD1823647800ACF662 /* Images */,
+				448406E41823647800ACF662 /* UICustomNavigationController.h */,
+				448406E51823647800ACF662 /* UICustomNavigationController.m */,
+			);
+			path = Navbar;
+			sourceTree = "<group>";
+		};
+		448406DD1823647800ACF662 /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				448406DE1823647800ACF662 /* nav-bg.png */,
+				448406DF1823647800ACF662 /* nav-bg@2x.png */,
+				448406E01823647800ACF662 /* nav-lbtn.png */,
+				448406E11823647800ACF662 /* nav-lbtn@2x.png */,
+				448406E21823647800ACF662 /* nav-rbtn.png */,
+				448406E31823647800ACF662 /* nav-rbtn@2x.png */,
+			);
+			path = Images;
+			sourceTree = "<group>";
+		};
+		448406E61823647800ACF662 /* UICheckboxButton */ = {
+			isa = PBXGroup;
+			children = (
+				448406E71823647800ACF662 /* Images */,
+				448406F01823647800ACF662 /* UICheckboxButton.h */,
+				448406F11823647800ACF662 /* UICheckboxButton.m */,
+				448406F21823647800ACF662 /* UIGroupCheckboxView.h */,
+				448406F31823647800ACF662 /* UIGroupCheckboxView.m */,
+			);
+			path = UICheckboxButton;
+			sourceTree = "<group>";
+		};
+		448406E71823647800ACF662 /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				448406E81823647800ACF662 /* checkbox-checked.png */,
+				448406E91823647800ACF662 /* checkbox-checked@2x.png */,
+				448406EA1823647800ACF662 /* checkbox-normal.png */,
+				448406EB1823647800ACF662 /* checkbox-normal@2x.png */,
+				448406EC1823647800ACF662 /* option-normal.png */,
+				448406ED1823647800ACF662 /* option-normal@2x.png */,
+				448406EE1823647800ACF662 /* option-selected.png */,
+				448406EF1823647800ACF662 /* option-selected@2x.png */,
+			);
+			path = Images;
+			sourceTree = "<group>";
+		};
+		448406F41823647800ACF662 /* UICustomProgressBar */ = {
+			isa = PBXGroup;
+			children = (
+				448406F51823647800ACF662 /* Images */,
+				448406FA1823647800ACF662 /* UICustomProgressBar.h */,
+				448406FB1823647800ACF662 /* UICustomProgressBar.m */,
+			);
+			path = UICustomProgressBar;
+			sourceTree = "<group>";
+		};
+		448406F51823647800ACF662 /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				448406F61823647800ACF662 /* progressbar-bg.png */,
+				448406F71823647800ACF662 /* progressbar-bg@2x.png */,
+				448406F81823647800ACF662 /* progressbar-fill.png */,
+				448406F91823647800ACF662 /* progressbar-fill@2x.png */,
+			);
+			path = Images;
+			sourceTree = "<group>";
+		};
+		448406FC1823647800ACF662 /* UICustomSegmented */ = {
+			isa = PBXGroup;
+			children = (
+				448406FD1823647800ACF662 /* CustomSegmentedControl.h */,
+				448406FE1823647800ACF662 /* CustomSegmentedControl.m */,
+				448406FF1823647800ACF662 /* Images */,
+			);
+			path = UICustomSegmented;
+			sourceTree = "<group>";
+		};
+		448406FF1823647800ACF662 /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				448407001823647800ACF662 /* switch-left-selected.png */,
+				448407011823647800ACF662 /* switch-left-selected@2x.png */,
+				448407021823647800ACF662 /* switch-left-selected@2x.psd */,
+				448407031823647800ACF662 /* switch-left.png */,
+				448407041823647800ACF662 /* switch-left@2x.png */,
+				448407051823647800ACF662 /* switch-right-selected.png */,
+				448407061823647800ACF662 /* switch-right-selected@2x.png */,
+				448407071823647800ACF662 /* switch-right.png */,
+				448407081823647800ACF662 /* switch-right@2x.png */,
+			);
+			path = Images;
+			sourceTree = "<group>";
+		};
+		448407091823647800ACF662 /* UICustomSlider */ = {
+			isa = PBXGroup;
+			children = (
+				4484070A1823647800ACF662 /* Images */,
+				448407111823647800ACF662 /* UICustomSlider.h */,
+				448407121823647800ACF662 /* UICustomSlider.m */,
+			);
+			path = UICustomSlider;
+			sourceTree = "<group>";
+		};
+		4484070A1823647800ACF662 /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				4484070B1823647800ACF662 /* slider-bar.png */,
+				4484070C1823647800ACF662 /* slider-bar@2x.png */,
+				4484070D1823647800ACF662 /* slider-fill.png */,
+				4484070E1823647800ACF662 /* slider-fill@2x.png */,
+				4484070F1823647800ACF662 /* slider-pin.png */,
+				448407101823647800ACF662 /* slider-pin@2x.png */,
+			);
+			path = Images;
+			sourceTree = "<group>";
+		};
 		690450AB1754CCB300D4C3A2 /* Images */ = {
 			isa = PBXGroup;
 			children = (
@@ -173,7 +530,6 @@
 				695900011731BDC400295E85 /* Christian Challenge-Info.plist */,
 				695900021731BDC400295E85 /* InfoPlist.strings */,
 				695900051731BDC400295E85 /* main.m */,
-				6994A8E117553DAA00EA0744 /* getFitButton.PNG */,
 				695900071731BDC400295E85 /* Christian Challenge-Prefix.pch */,
 				69CB878C1741459000C1DE01 /* LoginViewController.h */,
 				69CB878D1741459000C1DE01 /* LoginViewController.m */,
@@ -209,12 +565,12 @@
 		6959FFF81731BDC400295E85 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				448406AC1823520700ACF662 /* FacebookSDK.framework */,
 				698E6B06175EF969000EE2CC /* libsqlite3.0.dylib */,
 				698E6B04175EF8DD000EE2CC /* AddressBook.framework */,
 				698E6B02175EF8D3000EE2CC /* AdSupport.framework */,
 				698E6B00175EF8B6000EE2CC /* Social.framework */,
 				698E6AFE175EF82F000EE2CC /* Accounts.framework */,
-				698E6AFC175EF78C000EE2CC /* FacebookSDK.framework */,
 				69C5D469173BC3EE0000E5EE /* SystemConfiguration.framework */,
 				69C5D467173BC3E70000E5EE /* StoreKit.framework */,
 				69C5D465173BC3E10000E5EE /* Security.framework */,
@@ -235,6 +591,14 @@
 		6959FFFF1731BDC400295E85 /* Christian Challenge */ = {
 			isa = PBXGroup;
 			children = (
+				448406AE1823647800ACF662 /* Images */,
+				448406B71823647800ACF662 /* UICustomSwitch */,
+				448406BE1823647800ACF662 /* UICustomTabbarController */,
+				448406D81823647800ACF662 /* Navbar */,
+				448406E61823647800ACF662 /* UICheckboxButton */,
+				448406F41823647800ACF662 /* UICustomProgressBar */,
+				448406FC1823647800ACF662 /* UICustomSegmented */,
+				448407091823647800ACF662 /* UICustomSlider */,
 				695900191731BF9700295E85 /* MainStoryboard.storyboard */,
 				9C0910901747242500124867 /* checkBoxes.h */,
 				9C0910911747242500124867 /* checkBoxes.m */,
@@ -275,6 +639,11 @@
 			attributes = {
 				LastUpgradeCheck = 0460;
 				ORGANIZATIONNAME = "Angel Olivera";
+				TargetAttributes = {
+					6959FFF51731BDC400295E85 = {
+						DevelopmentTeam = XP9NYLJ6V4;
+					};
+				};
 			};
 			buildConfigurationList = 6959FFF11731BDC400295E85 /* Build configuration list for PBXProject "Christian Challenge" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -299,27 +668,90 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				448407511823647800ACF662 /* switch-left.png in Resources */,
 				695900041731BDC400295E85 /* InfoPlist.strings in Resources */,
 				6959001A1731BF9700295E85 /* MainStoryboard.storyboard in Resources */,
+				4484073F1823647800ACF662 /* checkbox-checked@2x.png in Resources */,
+				4484071F1823647800ACF662 /* tabbar-bg.png in Resources */,
+				448407531823647800ACF662 /* switch-right-selected.png in Resources */,
+				448407131823647800ACF662 /* workout-btn-finish.png in Resources */,
 				6986CCD01742DA4900E40E46 /* MyIcon-1.png in Resources */,
 				6986CCD11742DA4900E40E46 /* MyIcon.png in Resources */,
 				69C6D30E1750591000E748C8 /* Icon.jpg in Resources */,
 				69C6D31E175064FD00E748C8 /* Default.png in Resources */,
 				69C6D3201750650200E748C8 /* Default@2x.png in Resources */,
+				448407501823647800ACF662 /* switch-left-selected@2x.psd in Resources */,
+				448407321823647800ACF662 /* tabbtn-workouts-selected@2x.png in Resources */,
+				4484072F1823647800ACF662 /* tabbtn-workouts-normal.png in Resources */,
+				448407241823647800ACF662 /* tabbtn-history-normal@2x.png in Resources */,
+				4484073E1823647800ACF662 /* checkbox-checked.png in Resources */,
+				4484071C1823647800ACF662 /* switchOffPlain.png in Resources */,
+				448407281823647800ACF662 /* tabbtn-newactivity-normal@2x.png in Resources */,
+				448407301823647800ACF662 /* tabbtn-workouts-normal@2x.png in Resources */,
+				448407491823647800ACF662 /* progressbar-bg@2x.png in Resources */,
+				448407481823647800ACF662 /* progressbar-bg.png in Resources */,
+				448407261823647800ACF662 /* tabbtn-history-selected@2x.png in Resources */,
+				448407311823647800ACF662 /* tabbtn-workouts-selected.png in Resources */,
+				4484071D1823647800ACF662 /* switchThumb.png in Resources */,
+				448407251823647800ACF662 /* tabbtn-history-selected.png in Resources */,
+				448407441823647800ACF662 /* option-selected.png in Resources */,
+				448407381823647800ACF662 /* nav-bg@2x.png in Resources */,
+				448407521823647800ACF662 /* switch-left@2x.png in Resources */,
 				69C6D3221750650C00E748C8 /* Default-568h@2x.png in Resources */,
-				6994A8E217553DAA00EA0744 /* getFitButton.PNG in Resources */,
 				69DE323D175E5CF30073379B /* NotCompleted.png in Resources */,
+				4484072E1823647800ACF662 /* tabbtn-routes-selected@2x.png in Resources */,
+				4484073B1823647800ACF662 /* nav-rbtn.png in Resources */,
+				448407411823647800ACF662 /* checkbox-normal@2x.png in Resources */,
+				448407591823647800ACF662 /* slider-fill.png in Resources */,
+				448407181823647800ACF662 /* workout-btn-pause@2x.png in Resources */,
+				448407581823647800ACF662 /* slider-bar@2x.png in Resources */,
+				448407431823647800ACF662 /* option-normal@2x.png in Resources */,
+				448407191823647800ACF662 /* workouts-header.png in Resources */,
 				69C0FF75175E8BEA003C8DC7 /* Completed.png in Resources */,
 				698E6AA0175EE161000EE2CC /* Default@2x-568h@2x.png in Resources */,
+				4484074B1823647800ACF662 /* progressbar-fill@2x.png in Resources */,
+				4484071B1823647800ACF662 /* switchBlueBg.png in Resources */,
+				448407141823647800ACF662 /* workout-btn-finish2.png in Resources */,
 				695686D91760CF270037FB4E /* getFitButton.png in Resources */,
+				4484072A1823647800ACF662 /* tabbtn-newactivity-selected@2x.png in Resources */,
+				448407421823647800ACF662 /* option-normal.png in Resources */,
 				6920CE271763AE3600F8985F /* CCProfilePage.png in Resources */,
+				4484072C1823647800ACF662 /* tabbtn-routes-normal@2x.png in Resources */,
+				448407371823647800ACF662 /* nav-bg.png in Resources */,
+				448407551823647800ACF662 /* switch-right.png in Resources */,
 				6920CE281763AE3600F8985F /* CCLoginButton.png in Resources */,
+				448407221823647800ACF662 /* tabbtn-bg-selected@2x.png in Resources */,
+				4484074A1823647800ACF662 /* progressbar-fill.png in Resources */,
+				448407401823647800ACF662 /* checkbox-normal.png in Resources */,
+				4484074F1823647800ACF662 /* switch-left-selected@2x.png in Resources */,
+				4484073C1823647800ACF662 /* nav-rbtn@2x.png in Resources */,
+				448407291823647800ACF662 /* tabbtn-newactivity-selected.png in Resources */,
+				448407451823647800ACF662 /* option-selected@2x.png in Resources */,
+				448407161823647800ACF662 /* workout-btn-finish@2x.png in Resources */,
+				448407171823647800ACF662 /* workout-btn-pause.png in Resources */,
+				4484075C1823647800ACF662 /* slider-pin@2x.png in Resources */,
+				448407211823647800ACF662 /* tabbtn-bg-selected.png in Resources */,
+				448407271823647800ACF662 /* tabbtn-newactivity-normal.png in Resources */,
 				6920CE291763AE3600F8985F /* CCSignUpButton.png in Resources */,
+				448407151823647800ACF662 /* workout-btn-finish2@2x.png in Resources */,
+				4484075B1823647800ACF662 /* slider-pin.png in Resources */,
+				448407571823647800ACF662 /* slider-bar.png in Resources */,
+				448407391823647800ACF662 /* nav-lbtn.png in Resources */,
 				6920CE2A1763AE3600F8985F /* CCLogin.png in Resources */,
+				448407561823647800ACF662 /* switch-right@2x.png in Resources */,
+				448407541823647800ACF662 /* switch-right-selected@2x.png in Resources */,
+				4484074E1823647800ACF662 /* switch-left-selected.png in Resources */,
 				6920CE2C1763B4AA00F8985F /* CCLoginScreen.png in Resources */,
 				6920CE301763B87B00F8985F /* CCCheckBoxOffButton.png in Resources */,
 				6920CE321763B9CE00F8985F /* CCCheckBoxOnButton.png in Resources */,
+				4484072B1823647800ACF662 /* tabbtn-routes-normal.png in Resources */,
+				4484072D1823647800ACF662 /* tabbtn-routes-selected.png in Resources */,
+				448407231823647800ACF662 /* tabbtn-history-normal.png in Resources */,
 				6920CE341763BAC800F8985F /* CCLogo.png in Resources */,
+				4484075A1823647800ACF662 /* slider-fill@2x.png in Resources */,
+				448407201823647800ACF662 /* tabbar-bg@2x.png in Resources */,
+				4484073A1823647800ACF662 /* nav-lbtn@2x.png in Resources */,
+				4484071A1823647800ACF662 /* workouts-header@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -333,10 +765,21 @@
 				695900061731BDC400295E85 /* main.m in Sources */,
 				6959000A1731BDC400295E85 /* AppDelegate.m in Sources */,
 				695900181731BE5200295E85 /* ChallengeViewController.m in Sources */,
+				4484074C1823647800ACF662 /* UICustomProgressBar.m in Sources */,
+				4484074D1823647800ACF662 /* CustomSegmentedControl.m in Sources */,
 				69CB878E1741459000C1DE01 /* LoginViewController.m in Sources */,
+				448407461823647800ACF662 /* UICheckboxButton.m in Sources */,
+				4484075D1823647800ACF662 /* UICustomSlider.m in Sources */,
 				9C0910921747242500124867 /* checkBoxes.m in Sources */,
 				69C6D31117505DCE00E748C8 /* SignUpViewController.m in Sources */,
+				448407351823647800ACF662 /* CustomNavigationBarView.m in Sources */,
+				4484073D1823647800ACF662 /* UICustomNavigationController.m in Sources */,
+				448407361823647800ACF662 /* CustomNavViewController.m in Sources */,
+				4484071E1823647800ACF662 /* UICustomSwitch.m in Sources */,
 				694BA50C175152A9004D4CC4 /* ProfileViewController.m in Sources */,
+				448407471823647800ACF662 /* UIGroupCheckboxView.m in Sources */,
+				448407341823647800ACF662 /* UICustomTabbarController.m in Sources */,
+				448407331823647800ACF662 /* UICustomTabbarButton.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -420,19 +863,20 @@
 		695900141731BDC400295E85 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				CODE_SIGN_IDENTITY = "iPhone Developer: Angel Olivera (33C93DF5EU)";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Angel Olivera (33C93DF5EU)";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
-					"\"$(SRCROOT)\"",
-					"\"$(SRCROOT)/../Documents/FacebookSDK\"",
+					"$(SRCROOT)",
+					"\\\"$(SRCROOT)/../Documents/FacebookSDK\\\"",
+					"/Users/angelolivera/Desktop/Christian-Challenge/FacebookSDK",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Christian Challenge/Christian Challenge-Prefix.pch";
 				INFOPLIST_FILE = "Christian Challenge/Christian Challenge-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "1B1FCBFE-A263-45C4-9FBE-862E0C4707EE";
-				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "1B1FCBFE-A263-45C4-9FBE-862E0C4707EE";
+				PROVISIONING_PROFILE = "";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "20701A4B-9E90-4277-82AB-202D86EC55E6";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -440,22 +884,23 @@
 		695900151731BDC400295E85 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				CODE_SIGN_IDENTITY = "iPhone Developer: Angel Olivera (33C93DF5EU)";
-				"CODE_SIGN_IDENTITY[sdk=*]" = "iPhone Developer: Angel Olivera (33C93DF5EU)";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Angel Olivera (33C93DF5EU)";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=*]" = "iPhone Developer: Angel Olivera (B4TJZL8K3Q)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
-					"\"$(SRCROOT)\"",
-					"\"$(SRCROOT)/../Documents/FacebookSDK\"",
+					"$(SRCROOT)",
+					"\\\"$(SRCROOT)/../Documents/FacebookSDK\\\"",
+					"/Users/angelolivera/Desktop/Christian-Challenge/FacebookSDK",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Christian Challenge/Christian Challenge-Prefix.pch";
 				INFOPLIST_FILE = "Christian Challenge/Christian Challenge-Info.plist";
 				ONLY_ACTIVE_ARCH = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "1B1FCBFE-A263-45C4-9FBE-862E0C4707EE";
-				"PROVISIONING_PROFILE[sdk=*]" = "1B1FCBFE-A263-45C4-9FBE-862E0C4707EE";
-				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "1B1FCBFE-A263-45C4-9FBE-862E0C4707EE";
+				PROVISIONING_PROFILE = "20701A4B-9E90-4277-82AB-202D86EC55E6";
+				"PROVISIONING_PROFILE[sdk=*]" = "20701A4B-9E90-4277-82AB-202D86EC55E6";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "20701A4B-9E90-4277-82AB-202D86EC55E6";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
