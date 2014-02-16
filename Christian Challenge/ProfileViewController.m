@@ -14,13 +14,13 @@
 
 
 @interface ProfileViewController ()
-
+@property (strong, nonatomic)ProfileViewController *profileViewController;
 @end
 
 @implementation ProfileViewController
 
 @synthesize username;
-@synthesize email;
+
 @synthesize challenge;
 @synthesize day;
 
@@ -31,9 +31,7 @@
 @synthesize imageView;
 
 
-
-
-
+bool firstTime = true;
 
 - (void)didReceiveMemoryWarning
 {
@@ -43,18 +41,15 @@
 -(void)viewDidAppear:(BOOL)animated{
     
     [super viewDidAppear:animated];
-    
+
     // Instantiate our custom log in view controller
     //LoginViewController *login = [[LoginViewController alloc]init];
-    
-    
-    
-    
+            // Create the log in view controller
+    LoginViewController *login = [[LoginViewController alloc] init];
     if (![PFUser currentUser]) { // No user logged in
-        // Create the log in view controller
-        LoginViewController *login = [[LoginViewController alloc] init];
         
-         [login setDelegate:self]; // Set ourselves as the delegate
+        
+        [login setDelegate:self]; // Set ourselves as the delegate
         
         login.fields = PFLogInFieldsUsernameAndPassword | PFLogInFieldsLogInButton |PFLogInFieldsTwitter | PFLogInFieldsFacebook | PFLogInFieldsSignUpButton;
         
@@ -69,14 +64,15 @@
         // Assign our sign up controller to be displayed from the login controller
         [login setSignUpController:signUpViewController];
         
+            
+            
         // Present the log in view controller
         [self presentViewController:login animated:YES completion:NULL];
         
-        
+        }
+    else{
+        [self logInViewController:login didLogInUser:[PFUser currentUser]];
     }
-    
-
-    
 }
 
 // Sent to the delegate to determine whether the log in request should be submitted to the server.
@@ -162,9 +158,6 @@
 }];
     
     
-    
-    
-    
     //Query the Profile class in parse
     PFQuery *query = [PFQuery queryWithClassName:@"Profiles"];
     //Searches for the current users name in the profile queary
@@ -176,6 +169,7 @@
             NSLog(@"The getFirstObject request failed.");
         } else {
             // The find succeeded.
+            profileObject = object;
             NSLog(@"Successfully retrieved the object.");
             
             
@@ -195,11 +189,50 @@
                 NSLog(@"Successfully retrieved the object.");
                 //Loads information from profile on to page
                 username.text = [object objectForKey:@"Username"];
-                email.text = [object objectForKey:@"Email"];
-                challenge.text = [object objectForKey:@"Challenge"];
-            day.text = [[object objectForKey:@"    Day"]stringValue];
+                challenge.text = [NSString stringWithFormat:@"Plan: %@", [object objectForKey:@"Challenge"]];
+            day.text = [NSString stringWithFormat:@"Day: %@",[[object objectForKey:@"Day"]stringValue]];
+            dayValue = [[object objectForKey:@"Day"]intValue];
             
            // day.text = [[object objectForKey:@"Day"]stringValue];
+            
+            progress.progress = [[profileObject objectForKey:@"Day"]intValue ];
+            
+            if([challenge.text isEqualToString:@"Plan: 30/30"])
+            {
+                //Check to see if progress is completed at 30 days
+                if(dayValue == 30)
+                {
+                    progress.progress = 1;
+                } //end if
+                else{
+                    progress.progress = (.03333 * dayValue);
+                    
+                } // end else
+            } //end if
+            else if([challenge.text isEqualToString:@"Plan: 60/60"]){
+                //Check to see if progress is completed at 30 days
+                if(dayValue == 60)
+                {
+                    progress.progress = 1;
+                } //end if
+                else{
+                    progress.progress = (.03333 * dayValue);
+                    
+                } //end else
+            } //end else if
+            else if([challenge.text isEqualToString: @"Plan: 90/90"]){
+                //Check to see if progress is completed at 30 days
+                if(dayValue == 90)
+                {
+                    progress.progress = 1;
+                } //end if
+                else{
+                    progress.progress = (.03333 * dayValue);
+                    
+                } //end else
+            } //end else if
+            
+
         }
     }];
     
@@ -254,40 +287,9 @@
 -(void)signUpViewControllerDidCancelSignUp:(PFSignUpViewController *)signUpController
 {
     [self dismissModalViewControllerAnimated:YES];
+    
+    
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -395,18 +397,16 @@
     return self;
 }
 
+- (IBAction)showMenu
+{
+    [self.frostedViewController presentMenuViewController];
+}
+
 - (void)viewDidLoad
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view.
-    
-    
-    //Makes sure when program loads there is no one signed in
-    [PFUser logOut];
-    
-    
-    
-
+    _profileUser = [PFUser currentUser];
     
 }
 

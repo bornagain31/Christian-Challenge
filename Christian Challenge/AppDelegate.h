@@ -9,11 +9,12 @@
 #import <UIKit/UIKit.h>
 #import "ChallengeViewController.h"
 #import "LoginViewController.h"
-
+#import "ProfileViewController.h"
+#import "REFrostedViewController.h"
 
  NSString *userName;
 
-@interface AppDelegate : UIResponder <UIApplicationDelegate>
+@interface AppDelegate : UIResponder <UIApplicationDelegate, REFrostedViewControllerDelegate>
 {
     PFObject *record;
     NSString *pName;

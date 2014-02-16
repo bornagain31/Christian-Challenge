@@ -9,32 +9,32 @@
 #import <UIKit/UIKit.h>
 
 
-#import "SuperView.h"
+//#import "SuperView.h"
 
-@protocol CustomNavBarViewDelegate;
+//@protocol CustomNavBarViewDelegate;
 
-@interface CustomNavigationBarView : SuperView {
-	IBOutlet UIImageView * bgImageView;
-	
-	IBOutlet UILabel *lblTitle;
-    IBOutlet UIButton * rightButton;
-    IBOutlet UIButton * leftButton;
+//@interface CustomNavigationBarView : SuperView {
+//	IBOutlet UIImageView * bgImageView;
+//	
+//	IBOutlet UILabel *lblTitle;
+//    IBOutlet UIButton * rightButton;
+//    IBOutlet UIButton * leftButton;
+//
+//}
+//
+//@property (nonatomic, assign) id<CustomNavBarViewDelegate> delegate;
+//
+//@property (nonatomic, retain) IBOutlet UIImageView * bgImageView;
+//@property (nonatomic, retain) IBOutlet UILabel * lblTitle;
+//
+//- (IBAction) navbarButton_Click:(id)sender;
+//
+//+ (id)viewFromStoryboard;
+//
+//- (void) showRightButton:(BOOL)bShow;
+//- (void) showLeftButton:(BOOL)bShow;
 
-}
-
-@property (nonatomic, assign) id<CustomNavBarViewDelegate> delegate;
-
-@property (nonatomic, retain) IBOutlet UIImageView * bgImageView;
-@property (nonatomic, retain) IBOutlet UILabel * lblTitle;
-
-- (IBAction) navbarButton_Click:(id)sender;
-
-+ (id)viewFromStoryboard;
-
-- (void) showRightButton:(BOOL)bShow;
-- (void) showLeftButton:(BOOL)bShow;
-
-@end
+//@end
 
 @protocol CustomNavBarViewDelegate <NSObject>
 

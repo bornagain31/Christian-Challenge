@@ -37,7 +37,7 @@
 	<key>CFBundlePackageType</key>
 	<string>APPL</string>
 	<key>CFBundleIconFile</key>
-	<string>Icon.jpg</string>
+	<string>CCIcon.jpg</string>
 	<key>CFBundleSignature</key>
 	<string>????</string>
 	<key>CFBundleDevelopmentRegion</key>

@@ -11,7 +11,7 @@
 #import "checkBoxes.h"
 
 
-@interface ChallengeViewController : UIViewController <PFLogInViewControllerDelegate, PFSignUpViewControllerDelegate>//, UIPickerViewDataSource, UIPickerViewDelegate>
+@interface ChallengeViewController : UIViewController < UITextViewDelegate>//, UIPickerViewDataSource, UIPickerViewDelegate>
 
 {
     NSString *textToPass;
@@ -31,7 +31,7 @@
 
 -(IBAction)complete:(id)sender;
 -(IBAction)tapExit:(id)sender;
-
+- (IBAction)showMenu;
 //-(IBAction)getFit:(id)sender;
 
 

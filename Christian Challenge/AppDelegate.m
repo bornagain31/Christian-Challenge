@@ -8,6 +8,7 @@
 
 #import "AppDelegate.h"
 #import <Parse/Parse.h>
+#import "MenuViewController.h"
 
 
 @implementation AppDelegate
@@ -22,6 +23,8 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     
+    
+    
     [Parse setApplicationId:@"9HqNBXqgDFqgRagdPpxVrqFJ0ItGc05xid4srD6V"
                   clientKey:@"lpIOAEXW2OE7GAwf4G16Ye1ph8AVsaOKIJ3IR3Dg"];
     
@@ -33,8 +36,12 @@
     record = [PFObject objectWithClassName:@"Profiles"];
     myProgress.progress = 1;
     
-    return YES;
+    //Makes sure when program loads there is no one signed in
+    [PFUser logOut];
     
+    
+    return YES;
+
     
 }
 

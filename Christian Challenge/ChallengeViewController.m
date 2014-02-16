@@ -65,12 +65,21 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view.
-    
+//    UICheckboxButton *spiritCheck = [[UICheckboxButton alloc]initWithFrame:CGRectMake(190.0,90.0,30.0, 50.0)];
+//    [self.view addSubview:spiritCheck];
     notCompleted = [UIImage imageNamed:@"NotCompleted.png"];
     isCompleted = [UIImage imageNamed:@"Completed.png"];
     [completedButton setImage:notCompleted forState:normal];
+    
+    //Set boarders around textViews
+    [[self.notePhysical layer] setBorderColor:[[UIColor grayColor] CGColor]];
+    [[self.notePhysical layer] setBorderWidth:2.3];
+    [[self.notePhysical layer] setCornerRadius:15];
 
-
+    [[self.noteSpriritual layer] setBorderColor:[[UIColor grayColor] CGColor]];
+    [[self.noteSpriritual layer] setBorderWidth:2.3];
+    [[self.noteSpriritual layer] setCornerRadius:15];
+    
     //Query the Profile class in parse
     PFQuery *query = [PFQuery queryWithClassName:@"Profiles"];
     //Searches for the current users name in the profile queary
@@ -83,8 +92,6 @@
         } else {
             // The find succeeded.
             NSLog(@"Successfully retrieved the object.");
-            
-            
             
             //Loads information from profile on to page
             //Checks to see what challenge user is on
@@ -131,9 +138,6 @@
         }
     }];
     
-    //Makes sure when program loads there is no one signed in
-    [PFUser logOut];
-
 }
 
 - (void)didReceiveMemoryWarning
@@ -144,18 +148,25 @@
 -(void)viewDidAppear:(BOOL)animated{
     
     [super viewDidAppear:animated];
-    
-    
+    [[NSNotificationCenter defaultCenter] addObserver:self
+                                             selector:@selector(keyboardWasShown:)
+                                                 name:UIKeyboardDidShowNotification object:nil];
     
     
 
 }
-
+-(void)keyboardWasShown:(NSNotification *)keyNotificaton{
+    
+}
 - (IBAction)tapExit:(id)sender {
     //Dismisses physical workout notes
     [notePhysical resignFirstResponder];
     //Dismisses spiritual workout notes
     [noteSpriritual resignFirstResponder];
+}
+- (IBAction)showMenu
+{
+    [self.frostedViewController presentMenuViewController];
 }
 
 
