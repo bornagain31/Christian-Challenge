@@ -8,6 +8,21 @@
 
 /* Begin PBXBuildFile section */
 		440E400518B5BAB100C31170 /* ActivityFile.m in Sources */ = {isa = PBXBuildFile; fileRef = 440E400418B5BAB100C31170 /* ActivityFile.m */; };
+		441FF99B18B6762C00F2351B /* cc-5Background@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 441FF98C18B6762C00F2351B /* cc-5Background@2x.png */; };
+		441FF99C18B6762C00F2351B /* cc-5BibleButton@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 441FF98D18B6762C00F2351B /* cc-5BibleButton@2x.png */; };
+		441FF99D18B6762C00F2351B /* cc-5CClogo.png in Resources */ = {isa = PBXBuildFile; fileRef = 441FF98E18B6762C00F2351B /* cc-5CClogo.png */; };
+		441FF99E18B6762C00F2351B /* cc-5CClogo@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 441FF98F18B6762C00F2351B /* cc-5CClogo@2x.png */; };
+		441FF99F18B6762C00F2351B /* cc-5Empty_bar@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 441FF99018B6762C00F2351B /* cc-5Empty_bar@2x.png */; };
+		441FF9A018B6762C00F2351B /* cc-5Full_bar@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 441FF99118B6762C00F2351B /* cc-5Full_bar@2x.png */; };
+		441FF9A118B6762C00F2351B /* cc-5MenuButton@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 441FF99218B6762C00F2351B /* cc-5MenuButton@2x.png */; };
+		441FF9A218B6762C00F2351B /* workout-btn-finish.png in Resources */ = {isa = PBXBuildFile; fileRef = 441FF99318B6762C00F2351B /* workout-btn-finish.png */; };
+		441FF9A318B6762C00F2351B /* workout-btn-finish2.png in Resources */ = {isa = PBXBuildFile; fileRef = 441FF99418B6762C00F2351B /* workout-btn-finish2.png */; };
+		441FF9A418B6762C00F2351B /* workout-btn-finish2@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 441FF99518B6762C00F2351B /* workout-btn-finish2@2x.png */; };
+		441FF9A518B6762C00F2351B /* workout-btn-finish@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 441FF99618B6762C00F2351B /* workout-btn-finish@2x.png */; };
+		441FF9A618B6762C00F2351B /* workout-btn-pause.png in Resources */ = {isa = PBXBuildFile; fileRef = 441FF99718B6762C00F2351B /* workout-btn-pause.png */; };
+		441FF9A718B6762C00F2351B /* workout-btn-pause@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 441FF99818B6762C00F2351B /* workout-btn-pause@2x.png */; };
+		441FF9A818B6762C00F2351B /* workouts-header.png in Resources */ = {isa = PBXBuildFile; fileRef = 441FF99918B6762C00F2351B /* workouts-header.png */; };
+		441FF9A918B6762C00F2351B /* workouts-header@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 441FF99A18B6762C00F2351B /* workouts-header@2x.png */; };
 		448406AD1823520700ACF662 /* FacebookSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 448406AC1823520700ACF662 /* FacebookSDK.framework */; };
 		448407481823647800ACF662 /* progressbar-bg.png in Resources */ = {isa = PBXBuildFile; fileRef = 448406F61823647800ACF662 /* progressbar-bg.png */; };
 		448407491823647800ACF662 /* progressbar-bg@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 448406F71823647800ACF662 /* progressbar-bg@2x.png */; };
@@ -88,6 +103,21 @@
 /* Begin PBXFileReference section */
 		440E400318B5BAB100C31170 /* ActivityFile.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ActivityFile.h; sourceTree = "<group>"; };
 		440E400418B5BAB100C31170 /* ActivityFile.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ActivityFile.m; sourceTree = "<group>"; };
+		441FF98C18B6762C00F2351B /* cc-5Background@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "cc-5Background@2x.png"; sourceTree = "<group>"; };
+		441FF98D18B6762C00F2351B /* cc-5BibleButton@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "cc-5BibleButton@2x.png"; sourceTree = "<group>"; };
+		441FF98E18B6762C00F2351B /* cc-5CClogo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "cc-5CClogo.png"; sourceTree = "<group>"; };
+		441FF98F18B6762C00F2351B /* cc-5CClogo@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "cc-5CClogo@2x.png"; sourceTree = "<group>"; };
+		441FF99018B6762C00F2351B /* cc-5Empty_bar@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "cc-5Empty_bar@2x.png"; sourceTree = "<group>"; };
+		441FF99118B6762C00F2351B /* cc-5Full_bar@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "cc-5Full_bar@2x.png"; sourceTree = "<group>"; };
+		441FF99218B6762C00F2351B /* cc-5MenuButton@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "cc-5MenuButton@2x.png"; sourceTree = "<group>"; };
+		441FF99318B6762C00F2351B /* workout-btn-finish.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "workout-btn-finish.png"; sourceTree = "<group>"; };
+		441FF99418B6762C00F2351B /* workout-btn-finish2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "workout-btn-finish2.png"; sourceTree = "<group>"; };
+		441FF99518B6762C00F2351B /* workout-btn-finish2@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "workout-btn-finish2@2x.png"; sourceTree = "<group>"; };
+		441FF99618B6762C00F2351B /* workout-btn-finish@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "workout-btn-finish@2x.png"; sourceTree = "<group>"; };
+		441FF99718B6762C00F2351B /* workout-btn-pause.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "workout-btn-pause.png"; sourceTree = "<group>"; };
+		441FF99818B6762C00F2351B /* workout-btn-pause@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "workout-btn-pause@2x.png"; sourceTree = "<group>"; };
+		441FF99918B6762C00F2351B /* workouts-header.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "workouts-header.png"; sourceTree = "<group>"; };
+		441FF99A18B6762C00F2351B /* workouts-header@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "workouts-header@2x.png"; sourceTree = "<group>"; };
 		448406AC1823520700ACF662 /* FacebookSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FacebookSDK.framework; path = FacebookSDK/FacebookSDK.framework; sourceTree = "<group>"; };
 		448406F61823647800ACF662 /* progressbar-bg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "progressbar-bg.png"; sourceTree = "<group>"; };
 		448406F71823647800ACF662 /* progressbar-bg@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "progressbar-bg@2x.png"; sourceTree = "<group>"; };
@@ -217,6 +247,28 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		441FF98B18B6762C00F2351B /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				441FF98C18B6762C00F2351B /* cc-5Background@2x.png */,
+				441FF98D18B6762C00F2351B /* cc-5BibleButton@2x.png */,
+				441FF98E18B6762C00F2351B /* cc-5CClogo.png */,
+				441FF98F18B6762C00F2351B /* cc-5CClogo@2x.png */,
+				441FF99018B6762C00F2351B /* cc-5Empty_bar@2x.png */,
+				441FF99118B6762C00F2351B /* cc-5Full_bar@2x.png */,
+				441FF99218B6762C00F2351B /* cc-5MenuButton@2x.png */,
+				441FF99318B6762C00F2351B /* workout-btn-finish.png */,
+				441FF99418B6762C00F2351B /* workout-btn-finish2.png */,
+				441FF99518B6762C00F2351B /* workout-btn-finish2@2x.png */,
+				441FF99618B6762C00F2351B /* workout-btn-finish@2x.png */,
+				441FF99718B6762C00F2351B /* workout-btn-pause.png */,
+				441FF99818B6762C00F2351B /* workout-btn-pause@2x.png */,
+				441FF99918B6762C00F2351B /* workouts-header.png */,
+				441FF99A18B6762C00F2351B /* workouts-header@2x.png */,
+			);
+			path = Images;
+			sourceTree = "<group>";
+		};
 		448406F41823647800ACF662 /* UICustomProgressBar */ = {
 			isa = PBXGroup;
 			children = (
@@ -379,6 +431,7 @@
 		6959FFFF1731BDC400295E85 /* Christian Challenge */ = {
 			isa = PBXGroup;
 			children = (
+				441FF98B18B6762C00F2351B /* Images */,
 				44945B6218B00D47000DA007 /* REFrostedViewController */,
 				448406F41823647800ACF662 /* UICustomProgressBar */,
 				448407091823647800ACF662 /* UICustomSlider */,
@@ -457,11 +510,15 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				441FF9A918B6762C00F2351B /* workouts-header@2x.png in Resources */,
 				695900041731BDC400295E85 /* InfoPlist.strings in Resources */,
 				6959001A1731BF9700295E85 /* MainStoryboard.storyboard in Resources */,
 				449F0E3518ADD63100FAFA8A /* Images.xcassets in Resources */,
+				441FF99F18B6762C00F2351B /* cc-5Empty_bar@2x.png in Resources */,
 				44B173FE18A8860E00ED8E26 /* BeginButton.png in Resources */,
+				441FF9A518B6762C00F2351B /* workout-btn-finish@2x.png in Resources */,
 				6986CCD01742DA4900E40E46 /* MyIcon-1.png in Resources */,
+				441FF99E18B6762C00F2351B /* cc-5CClogo@2x.png in Resources */,
 				6986CCD11742DA4900E40E46 /* MyIcon.png in Resources */,
 				69C6D31E175064FD00E748C8 /* Default.png in Resources */,
 				69C6D3201750650200E748C8 /* Default@2x.png in Resources */,
@@ -470,26 +527,37 @@
 				44C88C5118AA67B6000C50F9 /* profile_main_background.png in Resources */,
 				69C6D3221750650C00E748C8 /* Default-568h@2x.png in Resources */,
 				44945B7D18B019F0000DA007 /* CCIcon.jpg in Resources */,
+				441FF99B18B6762C00F2351B /* cc-5Background@2x.png in Resources */,
 				69DE323D175E5CF30073379B /* NotCompleted.png in Resources */,
+				441FF9A418B6762C00F2351B /* workout-btn-finish2@2x.png in Resources */,
 				448407591823647800ACF662 /* slider-fill.png in Resources */,
+				441FF9A818B6762C00F2351B /* workouts-header.png in Resources */,
 				448407581823647800ACF662 /* slider-bar@2x.png in Resources */,
 				69C0FF75175E8BEA003C8DC7 /* Completed.png in Resources */,
 				698E6AA0175EE161000EE2CC /* Default@2x-568h@2x.png in Resources */,
 				4484074B1823647800ACF662 /* progressbar-fill@2x.png in Resources */,
+				441FF99D18B6762C00F2351B /* cc-5CClogo.png in Resources */,
+				441FF9A218B6762C00F2351B /* workout-btn-finish.png in Resources */,
 				695686D91760CF270037FB4E /* getFitButton.png in Resources */,
+				441FF9A718B6762C00F2351B /* workout-btn-pause@2x.png in Resources */,
 				6920CE271763AE3600F8985F /* CCProfilePage.png in Resources */,
 				6920CE281763AE3600F8985F /* CCLoginButton.png in Resources */,
 				4484074A1823647800ACF662 /* progressbar-fill.png in Resources */,
 				44E157E218AF1343006A1E22 /* menu-icon@2x.png in Resources */,
+				441FF9A618B6762C00F2351B /* workout-btn-pause.png in Resources */,
+				441FF99C18B6762C00F2351B /* cc-5BibleButton@2x.png in Resources */,
 				4484075C1823647800ACF662 /* slider-pin@2x.png in Resources */,
 				6920CE291763AE3600F8985F /* CCSignUpButton.png in Resources */,
 				4484075B1823647800ACF662 /* slider-pin.png in Resources */,
 				448407571823647800ACF662 /* slider-bar.png in Resources */,
+				441FF9A318B6762C00F2351B /* workout-btn-finish2.png in Resources */,
+				441FF9A018B6762C00F2351B /* cc-5Full_bar@2x.png in Resources */,
 				6920CE2A1763AE3600F8985F /* CCLogin.png in Resources */,
 				6920CE2C1763B4AA00F8985F /* CCLoginScreen.png in Resources */,
 				6920CE301763B87B00F8985F /* CCCheckBoxOffButton.png in Resources */,
 				44C88C5318AA6A4E000C50F9 /* profile_main_menu_button.png in Resources */,
 				6920CE321763B9CE00F8985F /* CCCheckBoxOnButton.png in Resources */,
+				441FF9A118B6762C00F2351B /* cc-5MenuButton@2x.png in Resources */,
 				6920CE341763BAC800F8985F /* CCLogo.png in Resources */,
 				4484075A1823647800ACF662 /* slider-fill@2x.png in Resources */,
 				44E157E118AF1343006A1E22 /* menu-icon.png in Resources */,
@@ -608,6 +676,7 @@
 				ARCHS = "$(ARCHS_STANDARD)";
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COMPRESS_PNG_FILES = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(SRCROOT)",
@@ -634,6 +703,7 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=*]" = "iPhone Developer: Angel Olivera (B4TJZL8K3Q)";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COMPRESS_PNG_FILES = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(SRCROOT)",

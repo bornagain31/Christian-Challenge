@@ -17,11 +17,11 @@
         // Initialization code
         
         imgBar = [[UIImageView alloc] initWithFrame:CGRectMake( 0, 0, frame.size.width, frame.size.height)];
-        [imgBar setImage:[[UIImage imageNamed:@"progressbar-bg.png"]  resizableImageWithCapInsets:UIEdgeInsetsMake(0.0, 5.0, 0.0, 5.0)]];
+        [imgBar setImage:[[UIImage imageNamed:@"cc-5Empty_bar.png"]  resizableImageWithCapInsets:UIEdgeInsetsMake(0.0, 5.0, 0.0, 9.0)]];
         [self addSubview:imgBar];
         
         imgFill = [[UIImageView alloc] initWithFrame:CGRectMake( 0, 0, 0, frame.size.height)];
-        [imgFill setImage:[[UIImage imageNamed:@"progressbar-fill.png"] resizableImageWithCapInsets:UIEdgeInsetsMake(0.0, 5.0, 0.0, 5.0)]];
+        [imgFill setImage:[[UIImage imageNamed:@"cc-5Full_bar.png"] resizableImageWithCapInsets:UIEdgeInsetsMake(0.0, 5.0, 0.0, 9.0)]];
         [self addSubview:imgFill];
         
         lblText = [[UILabel alloc] initWithFrame:CGRectMake( (frame.size.width - 40.0f)/ 2, 0, 40.0f, frame.size.height)];
@@ -30,6 +30,14 @@
         [lblText setTextAlignment:NSTextAlignmentCenter];
         [lblText setBackgroundColor:[UIColor clearColor]];
         [self addSubview:lblText];
+        
+        sLabel= [[UILabel alloc] initWithFrame:CGRectMake( (frame.size.width - 110.0f)/ 2, 0, 100.0f, frame.size.height)];
+        [sLabel setFont:[UIFont fontWithName:@"Helvetica" size:13.0f]];
+        [sLabel setTextColor:[UIColor whiteColor]];
+        [sLabel setTextAlignment:NSTextAlignmentLeft];
+        [sLabel setBackgroundColor:[UIColor clearColor]];
+        [self addSubview:sLabel];
+
     }
     return self;
 }
@@ -60,7 +68,7 @@
     CGRect lblFrm = lblText.frame;
     
     lblFrm.origin.x = MIN( maxWidth - lblFrm.size.width, fillImgFrame.size.width);
-    
+    [sLabel setText:@"Spririt Fuel: "];
     [lblText setText:[NSString stringWithFormat:@"%d%@", (int)value, @"%"]];
     [lblText setFrame:lblFrm];
 }

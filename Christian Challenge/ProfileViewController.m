@@ -271,7 +271,7 @@ bool firstTime = true;
 
 -(void)imagePickerController:(UIImagePickerController *)picker didFinishPickingImage:(UIImage *)image editingInfo:(NSDictionary *)editingInfo
 {
-    imageView.image = [editingInfo objectForKey:UIImagePickerControllerOriginalImage];
+        imageView.image = [editingInfo objectForKey:UIImagePickerControllerOriginalImage];
     
     NSData *imageData = UIImageJPEGRepresentation(image, 0.05f);
     PFFile *imageFile = [PFFile fileWithName:@"Image.jpg" data:imageData];
@@ -433,7 +433,10 @@ bool firstTime = true;
     [super viewDidLoad];
 	// Do any additional setup after loading the view.
     
-    progressCustom = [[UICustomProgressBar alloc] initWithFrame:CGRectMake(143, 154, 157, 21)];
+    [imageView.layer setBorderColor:[[UIColor blackColor]CGColor]];
+    [imageView.layer setBorderWidth:4.0];
+
+    progressCustom = [[UICustomProgressBar alloc] initWithFrame:CGRectMake(35, 250, 250, 54)];
     //[progressCustom setCurrentPercentWithValue:100];
     [self.view addSubview:progressCustom];
     

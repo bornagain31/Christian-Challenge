@@ -12,6 +12,7 @@
     UIImageView * imgFill;
     UIImageView * imgBar;
     UILabel * lblText;
+    UILabel * sLabel;
 }
 
 - (void) setCurrentPercentWithValue:(float)value;
