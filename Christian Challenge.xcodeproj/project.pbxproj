@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		440E400518B5BAB100C31170 /* ActivityFile.m in Sources */ = {isa = PBXBuildFile; fileRef = 440E400418B5BAB100C31170 /* ActivityFile.m */; };
 		448406AD1823520700ACF662 /* FacebookSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 448406AC1823520700ACF662 /* FacebookSDK.framework */; };
 		448407481823647800ACF662 /* progressbar-bg.png in Resources */ = {isa = PBXBuildFile; fileRef = 448406F61823647800ACF662 /* progressbar-bg.png */; };
 		448407491823647800ACF662 /* progressbar-bg@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 448406F71823647800ACF662 /* progressbar-bg@2x.png */; };
@@ -85,6 +86,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		440E400318B5BAB100C31170 /* ActivityFile.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ActivityFile.h; sourceTree = "<group>"; };
+		440E400418B5BAB100C31170 /* ActivityFile.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ActivityFile.m; sourceTree = "<group>"; };
 		448406AC1823520700ACF662 /* FacebookSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FacebookSDK.framework; path = FacebookSDK/FacebookSDK.framework; sourceTree = "<group>"; };
 		448406F61823647800ACF662 /* progressbar-bg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "progressbar-bg.png"; sourceTree = "<group>"; };
 		448406F71823647800ACF662 /* progressbar-bg@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "progressbar-bg@2x.png"; sourceTree = "<group>"; };
@@ -391,6 +394,8 @@
 				449F0E3718AEB61400FAFA8A /* RootViewController.m */,
 				44945B7518B00EB5000DA007 /* CCNavigationControllerViewController.h */,
 				44945B7618B00EB5000DA007 /* CCNavigationControllerViewController.m */,
+				440E400318B5BAB100C31170 /* ActivityFile.h */,
+				440E400418B5BAB100C31170 /* ActivityFile.m */,
 			);
 			path = "Christian Challenge";
 			sourceTree = "<group>";
@@ -498,6 +503,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				440E400518B5BAB100C31170 /* ActivityFile.m in Sources */,
 				695900061731BDC400295E85 /* main.m in Sources */,
 				6959000A1731BDC400295E85 /* AppDelegate.m in Sources */,
 				695900181731BE5200295E85 /* ChallengeViewController.m in Sources */,
@@ -605,7 +611,6 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(SRCROOT)",
-					"\\\\\\\\\\\\\\\"$(SRCROOT)/../Documents/FacebookSDK\\\\\\\\\\\\\\\"",
 					"/Users/angelolivera/Desktop/Christian-Challenge/FacebookSDK",
 					"/Users/angelolivera/Desktop/Christian-Challenge",
 					"/Users/angelolivera/Christian-Challenge",
@@ -632,7 +637,6 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(SRCROOT)",
-					"\\\\\\\\\\\\\\\"$(SRCROOT)/../Documents/FacebookSDK\\\\\\\\\\\\\\\"",
 					"/Users/angelolivera/Desktop/Christian-Challenge/FacebookSDK",
 					"/Users/angelolivera/Desktop/Christian-Challenge",
 					"/Users/angelolivera/Christian-Challenge",

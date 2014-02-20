@@ -132,12 +132,25 @@
                                 <color key="tintColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                                 <color key="barTintColor" red="0.11372549831867218" green="0.59215688705444336" blue="1" alpha="1" colorSpace="deviceRGB"/>
                             </toolbar>
-                            <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" fixedFrame="YES" progressViewStyle="bar" progress="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="xdm-KZ-SaF">
+                            <progressView hidden="YES" opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" fixedFrame="YES" progressViewStyle="bar" progress="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="xdm-KZ-SaF">
                                 <rect key="frame" x="142" y="161" width="158" height="3"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="progressTintColor" red="0.28859526515601042" green="1" blue="0.2574600187266779" alpha="1" colorSpace="calibratedRGB"/>
                                 <color key="trackTintColor" red="0.11372549830000001" green="0.59215688710000003" blue="1" alpha="1" colorSpace="deviceRGB"/>
                             </progressView>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="G0g-Un-LEv">
+                                <rect key="frame" x="19" y="214" width="281" height="334"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <subviews>
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" editable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="c7F-g4-eqg">
+                                        <rect key="frame" x="0.0" y="0.0" width="281" height="334"/>
+                                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                    </textView>
+                                </subviews>
+                            </scrollView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                     </view>
@@ -150,6 +163,8 @@
                     </navigationItem>
                     <simulatedOrientationMetrics key="simulatedOrientationMetrics"/>
                     <connections>
+                        <outlet property="activityLog" destination="c7F-g4-eqg" id="cd9-Nt-84n"/>
+                        <outlet property="activityScroll" destination="G0g-Un-LEv" id="vt0-b2-8UQ"/>
                         <outlet property="button" destination="al0-bz-obG" id="6It-Wh-wCv"/>
                         <outlet property="challenge" destination="S6w-nF-CC7" id="iex-3R-zqK"/>
                         <outlet property="day" destination="h5c-9x-yZ4" id="cDT-5G-ThA"/>
@@ -300,6 +315,9 @@
                                 <state key="highlighted">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="CompleteDone:" destination="o5e-ek-zbH" eventType="touchUpInside" id="meO-fC-mbb"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
@@ -338,7 +356,7 @@
                     <connections>
                         <outlet property="checkBoxPhysical" destination="hOs-GX-mYF" id="4xU-8B-7WV"/>
                         <outlet property="checkBoxSpirit" destination="tVF-55-okf" id="2df-lA-ZNE"/>
-                        <outlet property="completedButton" destination="IIm-tv-tTS" id="Igj-GW-YT8"/>
+                        <outlet property="completedButton" destination="IIm-tv-tTS" id="RcX-89-E0k"/>
                         <outlet property="day" destination="J2n-Fp-23b" id="PYf-58-ew2"/>
                         <outlet property="notePhysical" destination="Yn8-5a-1MI" id="iGI-E7-p3H"/>
                         <outlet property="noteSpriritual" destination="JTE-5X-ZJn" id="ST4-LM-Ab9"/>

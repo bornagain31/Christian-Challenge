@@ -9,5 +9,7 @@
 #import <UIKit/UIKit.h>
 #import "REFrostedViewController.h"
 @interface MenuViewController : UITableViewController
-
+@property (strong, nonatomic) UIImageView *imageView;
+@property (strong, nonatomic) NSString *userName;
+@property (strong, nonatomic) UILabel *label;
 @end

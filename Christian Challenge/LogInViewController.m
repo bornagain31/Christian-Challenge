@@ -27,7 +27,13 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view.
+    self.view.backgroundColor = [UIColor colorWithWhite:0 alpha:1];
+    //self.view.backgroundColor = [UIColor whiteColor];
     //self.view.backgroundColor = [UIColor colorWithPatternImage:[UIImage imageNamed:@"CCBackground.png"]];
+    self.logInView.usernameField.borderStyle = UITextBorderStyleLine;
+    self.logInView.passwordField.borderStyle = UITextBorderStyleLine;
+    self.logInView.usernameField.backgroundColor = [UIColor colorWithWhite:1.0 alpha:0.2];
+    self.logInView.passwordField.backgroundColor = [UIColor colorWithWhite:1.0 alpha:0.2];
     //self.logInView.usernameField.backgroundColor = [UIColor colorWithWhite:1.0 alpha:0.2];
     //self.logInView.passwordField.backgroundColor = [UIColor colorWithWhite:1.0 alpha:0.2];
     

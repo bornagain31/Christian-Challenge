@@ -29,14 +29,20 @@
 
 @synthesize mediaPicker;
 @synthesize imageView;
-
-
+@synthesize activityScroll;
+@synthesize activityLog;
 bool firstTime = true;
 
 - (void)didReceiveMemoryWarning
 {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+
+-(void)viewWillAppear:(BOOL)animated{
+    [super viewWillAppear:animated];
+    [self.view setNeedsLayout];
+    [self.view setNeedsDisplay];
 }
 -(void)viewDidAppear:(BOOL)animated{
     
@@ -72,7 +78,11 @@ bool firstTime = true;
         }
     else{
         [self logInViewController:login didLogInUser:[PFUser currentUser]];
+        sleep(0.5);
+        [self loadData];
     }
+    
+    
 }
 
 // Sent to the delegate to determine whether the log in request should be submitted to the server.
@@ -152,91 +162,12 @@ bool firstTime = true;
                 }
             }];
         }
-        
+        [self loadData];
         
                 
 }];
     
-    
-    //Query the Profile class in parse
-    PFQuery *query = [PFQuery queryWithClassName:@"Profiles"];
-    //Searches for the current users name in the profile queary
-    [query whereKey:@"Username" equalTo:[[PFUser currentUser]objectForKey:@"username"]];
-    //Makes an object out of profile
-    [query getFirstObjectInBackgroundWithBlock:^(PFObject *object, NSError *error) {
-        //Checks to see if object was found
-        if (!object) {
-            NSLog(@"The getFirstObject request failed.");
-        } else {
-            // The find succeeded.
-            profileObject = object;
-            NSLog(@"Successfully retrieved the object.");
-            
-            
-            
-            //Loads information from profile on to page
-
-                
-                PFFile *imageFile = [object objectForKey:@"Picture"];
-                [imageFile getDataInBackgroundWithBlock:^(NSData *data, NSError *error) {
-                    if(!error)
-                    {
-                        button.hidden = TRUE;
-                        imageView.image = [UIImage imageWithData:data];
-                    }
-                }];
-                
-                NSLog(@"Successfully retrieved the object.");
-                //Loads information from profile on to page
-                username.text = [object objectForKey:@"Username"];
-                challenge.text = [NSString stringWithFormat:@"Plan: %@", [object objectForKey:@"Challenge"]];
-            day.text = [NSString stringWithFormat:@"Day: %@",[[object objectForKey:@"Day"]stringValue]];
-            dayValue = [[object objectForKey:@"Day"]intValue];
-            
-           // day.text = [[object objectForKey:@"Day"]stringValue];
-            
-            progress.progress = [[profileObject objectForKey:@"Day"]intValue ];
-            
-            if([challenge.text isEqualToString:@"Plan: 30/30"])
-            {
-                //Check to see if progress is completed at 30 days
-                if(dayValue == 30)
-                {
-                    progress.progress = 1;
-                } //end if
-                else{
-                    progress.progress = (.03333 * dayValue);
-                    
-                } // end else
-            } //end if
-            else if([challenge.text isEqualToString:@"Plan: 60/60"]){
-                //Check to see if progress is completed at 30 days
-                if(dayValue == 60)
-                {
-                    progress.progress = 1;
-                } //end if
-                else{
-                    progress.progress = (.03333 * dayValue);
-                    
-                } //end else
-            } //end else if
-            else if([challenge.text isEqualToString: @"Plan: 90/90"]){
-                //Check to see if progress is completed at 30 days
-                if(dayValue == 90)
-                {
-                    progress.progress = 1;
-                } //end if
-                else{
-                    progress.progress = (.03333 * dayValue);
-                    
-                } //end else
-            } //end else if
-            
-
-        }
-    }];
-    
-    
+        
     [self dismissModalViewControllerAnimated:YES];
 }
 -(void)signUpViewController:(PFSignUpViewController *)signUpController didSignUpUser:(PFUser *)user
@@ -328,6 +259,16 @@ bool firstTime = true;
     [self presentModalViewController:mediaPicker animated:YES];
 }
 
+
+
+
+-(void)runActivityLog{
+    
+    
+}
+
+
+
 -(void)imagePickerController:(UIImagePickerController *)picker didFinishPickingImage:(UIImage *)image editingInfo:(NSDictionary *)editingInfo
 {
     imageView.image = [editingInfo objectForKey:UIImagePickerControllerOriginalImage];
@@ -379,6 +320,91 @@ bool firstTime = true;
     button.hidden = TRUE;
     }
 
+
+-(void)loadData{
+    //Query the Profile class in parse
+    PFQuery *query = [PFQuery queryWithClassName:@"Profiles"];
+    //Searches for the current users name in the profile queary
+    [query whereKey:@"Username" equalTo:[[PFUser currentUser]objectForKey:@"username"]];
+    //Makes an object out of profile
+    [query getFirstObjectInBackgroundWithBlock:^(PFObject *object, NSError *error) {
+        //Checks to see if object was found
+        if (!object) {
+            NSLog(@"The getFirstObject request failed.");
+        } else {
+            // The find succeeded.
+            profileObject = object;
+            NSLog(@"Successfully retrieved the object.");
+            
+            
+            
+            //Loads information from profile on to page
+
+            PFFile *imageFile = [object objectForKey:@"Picture"];
+            [imageFile getDataInBackgroundWithBlock:^(NSData *data, NSError *error) {
+                if(!error)
+                {
+                    button.hidden = TRUE;
+                    imageView.image = [UIImage imageWithData:data];
+                }
+            }];
+            
+            NSLog(@"Successfully retrieved the object.");
+            //Loads information from profile on to page
+            username.text = [object objectForKey:@"Username"];
+            challenge.text = [NSString stringWithFormat:@"Plan: %@", [object objectForKey:@"Challenge"]];
+            
+            day.text = [NSString stringWithFormat:@"Day: %@",[[object objectForKey:@"Day"]stringValue]];
+            dayValue = [[object objectForKey:@"Day"]intValue];
+            
+            // day.text = [[object objectForKey:@"Day"]stringValue];
+            
+            progress.progress = [[profileObject objectForKey:@"Day"]intValue ];
+            
+            if([challenge.text isEqualToString:@"Plan: 30/30"])
+            {
+                //Check to see if progress is completed at 30 days
+                if(dayValue == 30)
+                {
+                    progress.progress = 1;
+                    [progressCustom setCurrentPercentWithValue:100.0];
+                } //end if
+                else{
+                    progress.progress = (.03333 * dayValue);
+                    [progressCustom setCurrentPercentWithValue:(03.33 * dayValue)];
+                } // end else
+            } //end if
+            else if([challenge.text isEqualToString:@"Plan: 60/60"]){
+                //Check to see if progress is completed at 30 days
+                if(dayValue == 60)
+                {
+                    progress.progress = 1;
+                } //end if
+                else{
+                    progress.progress = (.03333 * dayValue);
+                    
+                } //end else
+            } //end else if
+            else if([challenge.text isEqualToString: @"Plan: 90/90"]){
+                //Check to see if progress is completed at 30 days
+                if(dayValue == 90)
+                {
+                    progress.progress = 1;
+                } //end if
+                else{
+                    progress.progress = (.03333 * dayValue);
+                    
+                } //end else
+            } //end else if
+            afile = [[ActivityFile alloc]init];
+            [afile initializeText:activityLog];
+            
+        }
+    }];
+    
+
+}
+
 -(void)imagePickerControllerDidCancel:(UIImagePickerController *)picker{
     
     [mediaPicker dismissModalViewControllerAnimated:YES];
@@ -406,8 +432,14 @@ bool firstTime = true;
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view.
+    
+    progressCustom = [[UICustomProgressBar alloc] initWithFrame:CGRectMake(143, 154, 157, 21)];
+    //[progressCustom setCurrentPercentWithValue:100];
+    [self.view addSubview:progressCustom];
+    
     _profileUser = [PFUser currentUser];
     
 }
+
 
 @end

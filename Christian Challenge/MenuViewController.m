@@ -16,10 +16,38 @@
 @end
 
 @implementation MenuViewController
-- (void)viewDidLoad
+@synthesize imageView;
+@synthesize userName;
+@synthesize label;
+
+- (void)viewDidAppear:(BOOL)animated
 {
-    [super viewDidLoad];
-    
+    //-(void)viewDidAppear:(BOOL)animated{
+        
+        [super viewDidLoad];
+        //Query the Profile class in parse
+        PFQuery *query = [PFQuery queryWithClassName:@"Profiles"];
+        //Searches for the current users name in the profile queary
+        [query whereKey:@"Username" equalTo:[[PFUser currentUser]objectForKey:@"username"]];
+        //Makes an object out of profile
+        [query getFirstObjectInBackgroundWithBlock:^(PFObject *object, NSError *error) {
+            //Checks to see if object was found
+            if (!object) {
+                NSLog(@"The getFirstObject request failed.");
+            } else {
+                // The find succeeded.
+                NSLog(@"Successfully retrieved the object.");
+                
+                PFFile *imageFile = [object objectForKey:@"Picture"];
+                [imageFile getDataInBackgroundWithBlock:^(NSData *data, NSError *error) {
+                    if(!error)
+                    {
+                        imageView.image = [UIImage imageWithData:data];
+                        
+                    }
+                }];
+                
+        [self.tableView reloadData];
     self.tableView.separatorColor = [UIColor colorWithRed:150/255.0f green:161/255.0f blue:177/255.0f alpha:1.0f];
     self.tableView.delegate = self;
     self.tableView.dataSource = self;
@@ -27,19 +55,24 @@
     self.tableView.backgroundColor = [UIColor clearColor];
     self.tableView.tableHeaderView = ({
         UIView *view = [[UIView alloc] initWithFrame:CGRectMake(0, 0, 0, 184.0f)];
-        UIImageView *imageView = [[UIImageView alloc] initWithFrame:CGRectMake(0, 40, 200, 75)];
+        //UIView *view = [[UIView alloc] initWithFrame:CGRectMake(0, 0, 0, 200.0f)];
+        //imageView = [[UIImageView alloc] initWithFrame:CGRectMake(0, 40, 140, 140)];
+        imageView = [[UIImageView alloc] initWithFrame:CGRectMake(0, 40, 100, 100)];
+        //imageView = [[UIImageView alloc] initWithFrame:CGRectMake(0, 40, 200, 75)];
         imageView.autoresizingMask = UIViewAutoresizingFlexibleLeftMargin | UIViewAutoresizingFlexibleRightMargin;
-        imageView.image = [UIImage imageNamed:@"CCLogo.png"];
-        //imageView.layer.masksToBounds = YES;
-        //imageView.layer.cornerRadius = 50.0;
-        //imageView.layer.borderColor = [UIColor whiteColor].CGColor;
-        //imageView.layer.borderWidth = 3.0f;
-        //imageView.layer.rasterizationScale = [UIScreen mainScreen].scale;
-        //imageView.layer.shouldRasterize = YES;
-        //imageView.clipsToBounds = YES;
+        //imageView.image = [UIImage imageNamed:@"CCLogo.png"];
+        imageView.layer.masksToBounds = YES;
+        imageView.layer.cornerRadius = 50.0;
+        //imageView.layer.cornerRadius = 70.0;
+        imageView.layer.borderColor = [UIColor whiteColor].CGColor;
+        imageView.layer.borderWidth = 3.0f;
+        imageView.layer.rasterizationScale = [UIScreen mainScreen].scale;
+        imageView.layer.shouldRasterize = YES;
+        imageView.clipsToBounds = YES;
         
         UILabel *label = [[UILabel alloc] initWithFrame:CGRectMake(0, 150, 0, 24)];
-        label.text = @"Menu";
+        //label = [[UILabel alloc] initWithFrame:CGRectMake(0, 190, 0, 24)];
+        label.text = [object objectForKey:@"Username"];
         label.font = [UIFont fontWithName:@"HelveticaNeue" size:21];
         label.backgroundColor = [UIColor clearColor];
         label.textColor = [UIColor colorWithRed:62/255.0f green:68/255.0f blue:75/255.0f alpha:1.0f];
@@ -50,6 +83,11 @@
         [view addSubview:label];
         view;
     });
+            }
+            
+        }];
+    
+
 }
 
 #pragma mark -
@@ -104,6 +142,8 @@
     else{
         //NEED TO CREATE A LOGOUT SCREEN
         [PFUser logOut];
+        ProfileViewController *profileViewController = [self.storyboard instantiateViewControllerWithIdentifier:@"profileViewController"];
+        navigationController.viewControllers = @[profileViewController];
     }
     
     [self.frostedViewController hideMenuViewController];
