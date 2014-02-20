@@ -36,6 +36,14 @@
 			<key>IDESourceControlWCCName</key>
 			<string>Christian-Challenge</string>
 		</dict>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>D3641386-2379-4A41-A923-7F2E2B5BDE40</string>
+			<key>IDESourceControlWCCName</key>
+			<string>Christian-Challenge</string>
+		</dict>
 	</array>
 </dict>
 </plist>
