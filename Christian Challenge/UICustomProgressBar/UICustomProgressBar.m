@@ -68,7 +68,7 @@
     CGRect lblFrm = lblText.frame;
     
     lblFrm.origin.x = MIN( maxWidth - lblFrm.size.width, fillImgFrame.size.width);
-    [sLabel setText:@"Spririt Fuel: "];
+    [sLabel setText:@"Spirit Fuel: "];
     [lblText setText:[NSString stringWithFormat:@"%d%@", (int)value, @"%"]];
     [lblText setFrame:lblFrm];
 }

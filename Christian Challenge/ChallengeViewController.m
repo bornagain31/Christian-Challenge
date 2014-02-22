@@ -179,7 +179,9 @@
 -(void)viewDidAppear:(BOOL)animated{
     
     [super viewDidAppear:animated];
-    [[NSNotificationCenter defaultCenter] addObserver:self
+    self.navigationController.navigationBar.translucent = YES;
+    self.navigationController.navigationBar.opaque = NO;
+self.navigationController.navigationBar.barTintColor = [[UIColor colorWithRed:248/255.0f green:105/255.0f blue:42/255.0f alpha:1.0]colorWithAlphaComponent:1.0];    [[NSNotificationCenter defaultCenter] addObserver:self
                                              selector:@selector(keyboardWasShown:)
                                                  name:UIKeyboardDidShowNotification object:nil];
     

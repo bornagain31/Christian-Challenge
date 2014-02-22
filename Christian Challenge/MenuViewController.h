@@ -9,6 +9,10 @@
 #import <UIKit/UIKit.h>
 #import "REFrostedViewController.h"
 @interface MenuViewController : UITableViewController
+
+{
+    int colorSwitch; // 0 = black, 1 = blue 2 = red
+}
 @property (strong, nonatomic) UIImageView *imageView;
 @property (strong, nonatomic) NSString *userName;
 @property (strong, nonatomic) UILabel *label;

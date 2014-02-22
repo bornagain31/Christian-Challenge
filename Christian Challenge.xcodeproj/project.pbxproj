@@ -51,6 +51,12 @@
 		44B173FE18A8860E00ED8E26 /* BeginButton.png in Resources */ = {isa = PBXBuildFile; fileRef = 44B173FD18A8860E00ED8E26 /* BeginButton.png */; };
 		44C88C5118AA67B6000C50F9 /* profile_main_background.png in Resources */ = {isa = PBXBuildFile; fileRef = 44C88C5018AA67B6000C50F9 /* profile_main_background.png */; };
 		44C88C5318AA6A4E000C50F9 /* profile_main_menu_button.png in Resources */ = {isa = PBXBuildFile; fileRef = 44C88C5218AA6A4E000C50F9 /* profile_main_menu_button.png */; };
+		44D19EC918B8725D006CBCDC /* ios7CCProfilePage.png in Resources */ = {isa = PBXBuildFile; fileRef = 44D19EC818B8725D006CBCDC /* ios7CCProfilePage.png */; };
+		44D19ECC18B87A79006CBCDC /* ios7CCArrow.png in Resources */ = {isa = PBXBuildFile; fileRef = 44D19ECA18B87A79006CBCDC /* ios7CCArrow.png */; };
+		44D19ECD18B87A79006CBCDC /* ios7CCPP.png in Resources */ = {isa = PBXBuildFile; fileRef = 44D19ECB18B87A79006CBCDC /* ios7CCPP.png */; };
+		44D19ECF18B8F59A006CBCDC /* ios7CCProfilePage@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 44D19ECE18B8F59A006CBCDC /* ios7CCProfilePage@2x.png */; };
+		44D19ED118B9047C006CBCDC /* ios7CCProfilePage2@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 44D19ED018B9047C006CBCDC /* ios7CCProfilePage2@2x.png */; };
+		44D19ED318B90C0E006CBCDC /* ios7CCProfilePage3@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 44D19ED218B90C0E006CBCDC /* ios7CCProfilePage3@2x.png */; };
 		44D5399918AC978700E279ED /* MenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 44D5399818AC978700E279ED /* MenuViewController.m */; };
 		44E157E118AF1343006A1E22 /* menu-icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 44E157DF18AF1343006A1E22 /* menu-icon.png */; };
 		44E157E218AF1343006A1E22 /* menu-icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 44E157E018AF1343006A1E22 /* menu-icon@2x.png */; };
@@ -156,6 +162,12 @@
 		44B173FD18A8860E00ED8E26 /* BeginButton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = BeginButton.png; sourceTree = "<group>"; };
 		44C88C5018AA67B6000C50F9 /* profile_main_background.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = profile_main_background.png; sourceTree = "<group>"; };
 		44C88C5218AA6A4E000C50F9 /* profile_main_menu_button.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = profile_main_menu_button.png; sourceTree = "<group>"; };
+		44D19EC818B8725D006CBCDC /* ios7CCProfilePage.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ios7CCProfilePage.png; sourceTree = "<group>"; };
+		44D19ECA18B87A79006CBCDC /* ios7CCArrow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ios7CCArrow.png; sourceTree = "<group>"; };
+		44D19ECB18B87A79006CBCDC /* ios7CCPP.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ios7CCPP.png; sourceTree = "<group>"; };
+		44D19ECE18B8F59A006CBCDC /* ios7CCProfilePage@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ios7CCProfilePage@2x.png"; sourceTree = "<group>"; };
+		44D19ED018B9047C006CBCDC /* ios7CCProfilePage2@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ios7CCProfilePage2@2x.png"; sourceTree = "<group>"; };
+		44D19ED218B90C0E006CBCDC /* ios7CCProfilePage3@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ios7CCProfilePage3@2x.png"; sourceTree = "<group>"; };
 		44D5399718AC978700E279ED /* MenuViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MenuViewController.h; sourceTree = "<group>"; };
 		44D5399818AC978700E279ED /* MenuViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MenuViewController.m; sourceTree = "<group>"; };
 		44E157DF18AF1343006A1E22 /* menu-icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "menu-icon.png"; sourceTree = "<group>"; };
@@ -250,6 +262,12 @@
 		441FF98B18B6762C00F2351B /* Images */ = {
 			isa = PBXGroup;
 			children = (
+				44D19ED218B90C0E006CBCDC /* ios7CCProfilePage3@2x.png */,
+				44D19ED018B9047C006CBCDC /* ios7CCProfilePage2@2x.png */,
+				44D19ECE18B8F59A006CBCDC /* ios7CCProfilePage@2x.png */,
+				44D19ECA18B87A79006CBCDC /* ios7CCArrow.png */,
+				44D19ECB18B87A79006CBCDC /* ios7CCPP.png */,
+				44D19EC818B8725D006CBCDC /* ios7CCProfilePage.png */,
 				441FF98C18B6762C00F2351B /* cc-5Background@2x.png */,
 				441FF98D18B6762C00F2351B /* cc-5BibleButton@2x.png */,
 				441FF98E18B6762C00F2351B /* cc-5CClogo.png */,
@@ -516,10 +534,13 @@
 				449F0E3518ADD63100FAFA8A /* Images.xcassets in Resources */,
 				441FF99F18B6762C00F2351B /* cc-5Empty_bar@2x.png in Resources */,
 				44B173FE18A8860E00ED8E26 /* BeginButton.png in Resources */,
+				44D19ECF18B8F59A006CBCDC /* ios7CCProfilePage@2x.png in Resources */,
 				441FF9A518B6762C00F2351B /* workout-btn-finish@2x.png in Resources */,
 				6986CCD01742DA4900E40E46 /* MyIcon-1.png in Resources */,
 				441FF99E18B6762C00F2351B /* cc-5CClogo@2x.png in Resources */,
+				44D19ECD18B87A79006CBCDC /* ios7CCPP.png in Resources */,
 				6986CCD11742DA4900E40E46 /* MyIcon.png in Resources */,
+				44D19EC918B8725D006CBCDC /* ios7CCProfilePage.png in Resources */,
 				69C6D31E175064FD00E748C8 /* Default.png in Resources */,
 				69C6D3201750650200E748C8 /* Default@2x.png in Resources */,
 				448407491823647800ACF662 /* progressbar-bg@2x.png in Resources */,
@@ -541,6 +562,8 @@
 				695686D91760CF270037FB4E /* getFitButton.png in Resources */,
 				441FF9A718B6762C00F2351B /* workout-btn-pause@2x.png in Resources */,
 				6920CE271763AE3600F8985F /* CCProfilePage.png in Resources */,
+				44D19ED318B90C0E006CBCDC /* ios7CCProfilePage3@2x.png in Resources */,
+				44D19ECC18B87A79006CBCDC /* ios7CCArrow.png in Resources */,
 				6920CE281763AE3600F8985F /* CCLoginButton.png in Resources */,
 				4484074A1823647800ACF662 /* progressbar-fill.png in Resources */,
 				44E157E218AF1343006A1E22 /* menu-icon@2x.png in Resources */,
@@ -560,6 +583,7 @@
 				441FF9A118B6762C00F2351B /* cc-5MenuButton@2x.png in Resources */,
 				6920CE341763BAC800F8985F /* CCLogo.png in Resources */,
 				4484075A1823647800ACF662 /* slider-fill@2x.png in Resources */,
+				44D19ED118B9047C006CBCDC /* ios7CCProfilePage2@2x.png in Resources */,
 				44E157E118AF1343006A1E22 /* menu-icon.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

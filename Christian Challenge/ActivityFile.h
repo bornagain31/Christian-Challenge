@@ -12,7 +12,9 @@
 
 {
     NSFileManager *fm;
-    NSString *data;
+    NSString *finalData;
+    NSString *appData;
+    NSString *initialData;
 }
 -(void)initializeText:(UITextView *) activityLog;
 -(void)loadData:(NSString *)activityLogger;

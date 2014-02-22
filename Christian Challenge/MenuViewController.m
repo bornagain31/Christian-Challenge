@@ -52,8 +52,22 @@
     self.tableView.delegate = self;
     self.tableView.dataSource = self;
     self.tableView.opaque = NO;
-                self.tableView.backgroundColor = [[UIColor blackColor]colorWithAlphaComponent:0.3];
-    self.tableView.tableHeaderView = ({
+                
+                switch (colorSwitch) {
+    
+                    case 0:
+                        self.tableView.backgroundColor = [[UIColor colorWithRed:63/255.0f green:178/255.0f blue:252/255.0f alpha:1.0]colorWithAlphaComponent:0.4];
+                        break;
+                    case 1:
+                        self.tableView.backgroundColor = [[UIColor colorWithRed:252/255.0f green:100/255.0f blue:64/255.0f alpha:1.0]colorWithAlphaComponent:0.4];
+                        break;
+                    default:
+                        break;
+                }
+                //self.tableView.backgroundColor = [[UIColor blackColor]colorWithAlphaComponent:0.3];
+     //Changes table color to custom
+                //self.tableView.backgroundColor = [[UIColor colorWithRed:63/255.0f green:178/255.0f blue:252/255.0f alpha:1.0]colorWithAlphaComponent:0.4];
+                self.tableView.tableHeaderView = ({
         UIView *view = [[UIView alloc] initWithFrame:CGRectMake(0, 0, 0, 184.0f)];
         //UIView *view = [[UIView alloc] initWithFrame:CGRectMake(0, 0, 0, 200.0f)];
         //imageView = [[UIImageView alloc] initWithFrame:CGRectMake(0, 40, 140, 140)];
@@ -136,15 +150,27 @@
     if (indexPath.section == 0 && indexPath.row == 0) {
         ProfileViewController *profileViewController = [self.storyboard instantiateViewControllerWithIdentifier:@"profileViewController"];
         navigationController.viewControllers = @[profileViewController];
+        
+        //Change tableview color to match blue activity screen
+        self.tableView.backgroundColor = [[UIColor colorWithRed:63/255.0f green:178/255.0f blue:252/255.0f alpha:1.0]colorWithAlphaComponent:0.4];
+        colorSwitch = 0;
     } else if(indexPath.section == 0 && indexPath.row == 1) {
         ChallengeViewController *activityViewController = [self.storyboard instantiateViewControllerWithIdentifier:@"activityViewController"];
         navigationController.viewControllers = @[activityViewController];
+        colorSwitch = 1;
+        
+        //Change tableview color to match red activity screen
+        self.tableView.backgroundColor = [[UIColor colorWithRed:63/255.0f green:178/255.0f blue:252/255.0f alpha:1.0]colorWithAlphaComponent:0.4];
+        
     }
     else{
         //NEED TO CREATE A LOGOUT SCREEN
         [PFUser logOut];
         ProfileViewController *profileViewController = [self.storyboard instantiateViewControllerWithIdentifier:@"profileViewController"];
         navigationController.viewControllers = @[profileViewController];
+        colorSwitch = 0;
+        //Change tableview color to match blue activity screen
+        self.tableView.backgroundColor = [[UIColor colorWithRed:63/255.0f green:178/255.0f blue:252/255.0f alpha:1.0]colorWithAlphaComponent:0.4];
     }
     
     [self.frostedViewController hideMenuViewController];

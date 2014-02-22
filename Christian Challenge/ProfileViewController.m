@@ -352,16 +352,16 @@ bool firstTime = true;
             NSLog(@"Successfully retrieved the object.");
             //Loads information from profile on to page
             username.text = [object objectForKey:@"Username"];
-            challenge.text = [NSString stringWithFormat:@"Plan: %@", [object objectForKey:@"Challenge"]];
+            challenge.text = [NSString stringWithFormat:@"%@", [object objectForKey:@"Challenge"]];
             
-            day.text = [NSString stringWithFormat:@"Day: %@",[[object objectForKey:@"Day"]stringValue]];
+            day.text = [NSString stringWithFormat:@"%@",[[object objectForKey:@"Day"]stringValue]];
             dayValue = [[object objectForKey:@"Day"]intValue];
             
             // day.text = [[object objectForKey:@"Day"]stringValue];
             
             progress.progress = [[profileObject objectForKey:@"Day"]intValue ];
             
-            if([challenge.text isEqualToString:@"Plan: 30/30"])
+            if([challenge.text isEqualToString:@"30/30"])
             {
                 //Check to see if progress is completed at 30 days
                 if(dayValue == 30)
@@ -432,13 +432,39 @@ bool firstTime = true;
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view.
+    //Changes to imageView for page
     
-    [imageView.layer setBorderColor:[[UIColor blackColor]CGColor]];
-    [imageView.layer setBorderWidth:4.0];
+    //UIView *view = [[UIView alloc] initWithFrame:CGRectMake(0, 0, 0, 184.0f)];
+    //UIView *view = [[UIView alloc] initWithFrame:CGRectMake(0, 0, 0, 200.0f)];
+    //imageView = [[UIImageView alloc] initWithFrame:CGRectMake(0, 40, 140, 140)];
+    //imageView = [[UIImageView alloc] initWithFrame:CGRectMake(0, 40, 100, 100)];
+    //imageView = [[UIImageView alloc] initWithFrame:CGRectMake(0, 40, 200, 75)];
+    imageView.autoresizingMask = UIViewAutoresizingFlexibleLeftMargin | UIViewAutoresizingFlexibleRightMargin;
+    //imageView.image = [UIImage imageNamed:@"CCLogo.png"];
+    imageView.layer.masksToBounds = YES;
+    //imageView.layer.cornerRadius = 50.0;
+    imageView.layer.cornerRadius = 65.0;
+    imageView.layer.borderColor = [UIColor whiteColor].CGColor;
+    imageView.layer.borderWidth = 3.0f;
+    imageView.layer.rasterizationScale = [UIScreen mainScreen].scale;
+    imageView.layer.shouldRasterize = YES;
+    imageView.clipsToBounds = YES;
+    //[imageView.layer setBorderColor:[[UIColor blackColor]CGColor]];
+    //[imageView.layer setBorderWidth:4.0];
+    
+    //self.navigationController.navigationBar.translucent = YES;
+    //self.navigationController.navigationBar.opaque = YES;
 
-    progressCustom = [[UICustomProgressBar alloc] initWithFrame:CGRectMake(35, 250, 250, 54)];
+    self.navigationController.navigationBar.translucent = YES;
+    self.navigationController.navigationBar.opaque = YES;
+    self.navigationController.navigationBar.barTintColor = [[UIColor colorWithRed:52/255.0f green:119/255.0f blue:245/255.0f alpha:1.0]colorWithAlphaComponent:1.0];
+    self.navigationController.navigationBar.tintColor = [UIColor whiteColor];
+    self.navigationController.navigationBar.backgroundColor = [UIColor whiteColor];
+    
+    
+    //progressCustom = [[UICustomProgressBar alloc] initWithFrame:CGRectMake(35, 250, 250, 54)];
     //[progressCustom setCurrentPercentWithValue:100];
-    [self.view addSubview:progressCustom];
+    //[self.view addSubview:progressCustom];
     
     _profileUser = [PFUser currentUser];
     
