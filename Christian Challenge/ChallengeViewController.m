@@ -201,7 +201,16 @@ self.navigationController.navigationBar.barTintColor = [[UIColor colorWithRed:24
 {
     [self.frostedViewController presentMenuViewController];
 }
-
+-(IBAction)spriritualPressed:(id)sender{
+  
+    notePhysical.hidden = YES;
+    noteSpriritual.hidden = NO;
+    
+}
+-(IBAction)physcialPressed:(id)sender{
+    noteSpriritual.hidden = YES;
+    notePhysical.hidden = NO;
+}
 
 @end
 

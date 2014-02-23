@@ -60,6 +60,7 @@
 		44D5399918AC978700E279ED /* MenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 44D5399818AC978700E279ED /* MenuViewController.m */; };
 		44E157E118AF1343006A1E22 /* menu-icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 44E157DF18AF1343006A1E22 /* menu-icon.png */; };
 		44E157E218AF1343006A1E22 /* menu-icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 44E157E018AF1343006A1E22 /* menu-icon@2x.png */; };
+		44FE9BB618BA3DBC0062681E /* ActivityPage.png in Resources */ = {isa = PBXBuildFile; fileRef = 44FE9BB518BA3DBC0062681E /* ActivityPage.png */; };
 		6920CE271763AE3600F8985F /* CCProfilePage.png in Resources */ = {isa = PBXBuildFile; fileRef = 6920CE211763AE3600F8985F /* CCProfilePage.png */; };
 		6920CE281763AE3600F8985F /* CCLoginButton.png in Resources */ = {isa = PBXBuildFile; fileRef = 6920CE221763AE3600F8985F /* CCLoginButton.png */; };
 		6920CE291763AE3600F8985F /* CCSignUpButton.png in Resources */ = {isa = PBXBuildFile; fileRef = 6920CE231763AE3600F8985F /* CCSignUpButton.png */; };
@@ -172,6 +173,7 @@
 		44D5399818AC978700E279ED /* MenuViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MenuViewController.m; sourceTree = "<group>"; };
 		44E157DF18AF1343006A1E22 /* menu-icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "menu-icon.png"; sourceTree = "<group>"; };
 		44E157E018AF1343006A1E22 /* menu-icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "menu-icon@2x.png"; sourceTree = "<group>"; };
+		44FE9BB518BA3DBC0062681E /* ActivityPage.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ActivityPage.png; sourceTree = "<group>"; };
 		6920CE211763AE3600F8985F /* CCProfilePage.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = CCProfilePage.png; sourceTree = "<group>"; };
 		6920CE221763AE3600F8985F /* CCLoginButton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = CCLoginButton.png; sourceTree = "<group>"; };
 		6920CE231763AE3600F8985F /* CCSignUpButton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = CCSignUpButton.png; sourceTree = "<group>"; };
@@ -262,6 +264,7 @@
 		441FF98B18B6762C00F2351B /* Images */ = {
 			isa = PBXGroup;
 			children = (
+				44FE9BB518BA3DBC0062681E /* ActivityPage.png */,
 				44D19ED218B90C0E006CBCDC /* ios7CCProfilePage3@2x.png */,
 				44D19ED018B9047C006CBCDC /* ios7CCProfilePage2@2x.png */,
 				44D19ECE18B8F59A006CBCDC /* ios7CCProfilePage@2x.png */,
@@ -545,6 +548,7 @@
 				69C6D3201750650200E748C8 /* Default@2x.png in Resources */,
 				448407491823647800ACF662 /* progressbar-bg@2x.png in Resources */,
 				448407481823647800ACF662 /* progressbar-bg.png in Resources */,
+				44FE9BB618BA3DBC0062681E /* ActivityPage.png in Resources */,
 				44C88C5118AA67B6000C50F9 /* profile_main_background.png in Resources */,
 				69C6D3221750650C00E748C8 /* Default-568h@2x.png in Resources */,
 				44945B7D18B019F0000DA007 /* CCIcon.jpg in Resources */,

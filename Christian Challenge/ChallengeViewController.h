@@ -27,7 +27,8 @@
 @property (retain, nonatomic) PFObject *profileObject;
 @property (retain, nonatomic) IBOutlet UITextView *notePhysical;
 @property (retain, nonatomic) IBOutlet UITextView *noteSpriritual;
-
+@property (strong, nonatomic) IBOutlet UIButton *spiritualButton;
+@property (strong, nonatomic) IBOutlet UIButton *physicalButton;
 
 @property (strong, nonatomic) IBOutlet checkBoxes *checkBoxPhysical;
 @property (strong, nonatomic) IBOutlet checkBoxes *checkBoxSpirit;
@@ -36,6 +37,7 @@
 -(IBAction)tapExit:(id)sender;
 - (IBAction)showMenu;
 -(IBAction)CompleteDone:(id)sender;
-
+-(IBAction)spriritualPressed:(id)sender;
+-(IBAction)physcialPressed:(id)sender;
 
 @end
